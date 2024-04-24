@@ -1,16 +1,18 @@
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 const Header = styled.header`
-
-    background-color: rgba(228, 228, 228, 1);
+    border-bottom: 1px solid ${theme.colors.Neutral30};
+    background-color: ${theme.colors.Neutral10};
     padding: 20px 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
-    border: 1px solid red;
 
+
+height: 76px;
+    
 `;
 
 

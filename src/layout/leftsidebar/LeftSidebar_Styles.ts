@@ -1,14 +1,19 @@
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 const LeftSidebar = styled.aside`
 
-    background-color: rgba(228, 228, 228, 1);
+    border-right: 1px solid ${theme.colors.Neutral30};
+    background-color: ${theme.colors.Neutral10};
     padding: 20px 0;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
 
+   
+    width: 125px;
+    margin-top: 76px;
 `;
 
 
