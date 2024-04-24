@@ -7,13 +7,13 @@ const LeftSidebar = styled.aside`
     background-color: ${theme.colors.Neutral10};
     padding: 20px 0;
     position: fixed;
-    top: 0;
+    top: 76px;
     left: 0;
     bottom: 0;
 
    
     width: 125px;
-    margin-top: 76px;
+    //margin-top: 76px;
 `;
 
 
