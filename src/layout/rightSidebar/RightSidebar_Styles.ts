@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
-const LeftSidebar = styled.aside`
+const RightSidebar = styled.aside`
 
     border-right: 1px solid ${theme.colors.Neutral30};
     background-color: ${theme.colors.Neutral10};
@@ -18,6 +18,6 @@ const LeftSidebar = styled.aside`
 
 
 export const S = {
-    LeftSidebar,
+    RightSidebar,
 
 }
