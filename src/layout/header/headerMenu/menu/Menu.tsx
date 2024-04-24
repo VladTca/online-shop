@@ -2,31 +2,16 @@ import React from "react";
 import {S} from "../HeaderMenu_Styles";
 import {Icon} from "../../../../components/icon/Icon";
 
-const items = [
-    {
-        title: "Home",
-        href: "home",
-        svg: "home",
-    },
-    {
-        title: "Order",
-        href: "order",
-        svg: "note",
-    },
-    {
-        title: "History",
-        href: "history",
-        svg: "clock",
-    },
-    {
-        title: "Bills",
-        href: "bills",
-        svg: "receipt",
-    },
 
-];
+type MenuPropsTypes = {
+    href: string;
+    svg: string;
+    title: string;
 
-export const Menu: React.FC = () => {
+};
+
+
+export const Menu: React.FC<{items: MenuPropsTypes[]}> = ({ items }) => {
     return (
         <ul>
             {items.map((item, index) => {
