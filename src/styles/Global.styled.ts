@@ -3,12 +3,15 @@ import { theme } from "./Theme";
 
 export const GlobalStyle = createGlobalStyle`
 
-  *,*::before,*::after {
-    box-sizing: border-box;
-      margin: 0;padding: 0;
-  }
-  
-  
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
     body {
         margin: 0;
         font-family: "Poppins", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -21,29 +24,29 @@ export const GlobalStyle = createGlobalStyle`
         min-width: 360px;
     }
 
-a{
-    text-decoration: none;
-    color: ${theme.colors.secondaryFont};
-    cursor: pointer;
-}
+    a {
+        text-decoration: none;
+        color: ${theme.colors.secondaryFont};
+        cursor: pointer;
+    }
 
-ul{
-    list-style: none;
-}
+    ul {
+        list-style: none;
+    }
 
-button{
-    background-color: unset;
-    border: none;
-    cursor: pointer ;
-    color: ${theme.colors.secondaryFont};
-    
-    
-}
+    button {
+        background-color: unset;
+        border: none;
+        cursor: pointer;
+        color: ${theme.colors.secondaryFont};
 
-section{
-    padding: 100px 0;
-    
-}
+
+    }
+
+    section {
+        padding: 100px 0;
+
+    }
 
 
 

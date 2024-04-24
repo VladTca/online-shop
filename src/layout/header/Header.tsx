@@ -11,8 +11,10 @@ export const Header: React.FC = () => {
         <S.Header>
             <Container>
                 <FlexWrapper justify={"space-between"} align={"center"}>
-                    <div><Icon iconId={"arrow-left"}/>
-                        <Logo/></div>
+                    <div>
+                        <Icon iconId={"arrow-left"}/>
+                        <Logo/>
+                    </div>
                     <DesktopMenu/>
                 </FlexWrapper>
             </Container>
