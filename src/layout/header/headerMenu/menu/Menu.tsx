@@ -1,27 +1,17 @@
 import React from "react";
 import {S} from "../HeaderMenu_Styles";
+import {Icon} from "../../../../components/icon/Icon";
 
-const items = [
-    {
-        title: "Home",
-        href: "home",
-    },
-    {
-        title: "Order",
-        href: "order",
-    },
-    {
-        title: "History",
-        href: "history",
-    },
-    {
-        title: "Bills",
-        href: "bills",
-    },
 
-];
+type MenuPropsTypes = {
+    href: string;
+    svg: string;
+    title: string;
 
-export const Menu: React.FC = () => {
+};
+
+
+export const Menu: React.FC<{items: MenuPropsTypes[]}> = ({ items }) => {
     return (
         <ul>
             {items.map((item, index) => {
@@ -34,6 +24,7 @@ export const Menu: React.FC = () => {
                             smooth={true}
                             to={item.href}
                         >
+                            <Icon iconId={item.svg}/>
                             {item.title}
                         </S.NavLink>
                     </S.MenuItem>

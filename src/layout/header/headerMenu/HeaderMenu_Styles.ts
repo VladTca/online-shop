@@ -31,8 +31,17 @@ const DesktopMenu = styled.nav`
     }
 `;
 
+const Photo = styled.img`
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  margin-right: 20px;
+  
+`;
+
 export const S = {
     NavLink,
     MenuItem,
     DesktopMenu,
+    Photo
 };
