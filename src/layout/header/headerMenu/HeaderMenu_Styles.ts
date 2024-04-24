@@ -4,6 +4,7 @@ import {Link} from "react-scroll";
 
 
 
+
 const MenuItem = styled.li`
     position: relative;
 `;
@@ -12,9 +13,10 @@ const MenuItem = styled.li`
 const NavLink = styled(Link)`
     color: ${theme.colors.Neutral60};
     text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+ 
 
     &:hover {
         color: ${theme.colors.Primary60};
@@ -26,16 +28,16 @@ const NavLink = styled(Link)`
 const DesktopMenu = styled.nav`
     ul {
         display: flex;
-        gap: 30px;
+        gap: 32px;
         justify-content: center;
-    }
+        margin: 0 32px;
 `;
 
 const Photo = styled.img`
   width: 44px;
   height: 44px;
   object-fit: cover;
-  margin-right: 20px;
+  //margin-right: 24px;
   
 `;
 

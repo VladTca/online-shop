@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 
+
 const Header = styled.header`
     border-bottom: 1px solid ${theme.colors.Neutral30};
     background-color: ${theme.colors.Neutral10};
-    padding: 20px 0;
+    padding: 16px 24px;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,9 +15,45 @@ const Header = styled.header`
 height: 76px;
     
 `;
+const MainTitle = styled.h2`
+  text-align: left;
+  font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: ${theme.colors.Neutral100};
+    
+
+`;
+
+const MainSubtitle = styled.h3`
+    text-align: left;
+    font-size: 14px;
+        font-weight: 400;
+        line-height: 140%;
+        color: ${theme.colors.Neutral60};
+    
+    `;
+
+const BackWrapper = styled.div`
+    width: 60px;
+    border-right: 1px solid ${theme.colors.Neutral30};
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+`;
+
+const LogoStyles = styled.div`
+margin:0 24px;
+`
 
 
 export const S = {
     Header,
+    MainTitle,
+    MainSubtitle,
+    BackWrapper,
+    LogoStyles
 
 }

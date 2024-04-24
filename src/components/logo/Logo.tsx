@@ -9,7 +9,8 @@ export const Logo: React.FC = () => {
         scroll.scrollToTop();
       }}
     >
-      <Icon iconId={"logo"} />
+      <Icon iconId={"logo"} height={"44"} width={"44"} viewBox={"0 0 44 44"} />
     </a>
+
   );
 };
