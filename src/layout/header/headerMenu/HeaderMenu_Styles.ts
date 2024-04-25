@@ -22,9 +22,14 @@ const NavLink = styled(Link)`
     text-align: center;
     align-items: center;
     cursor: pointer;
+     
+    
     &:hover {
         color: ${theme.colors.Primary60};
-
+        svg {
+            fill: ${theme.colors.Primary60};
+            stroke: ${theme.colors.Neutral10};
+        }
     }
 `;
 
@@ -33,7 +38,7 @@ const DesktopMenu = styled.nav`
     display: flex;
  
     justify-content: center;
-    align-items: end;
+    align-items: center;
    
 
 
@@ -41,6 +46,7 @@ const DesktopMenu = styled.nav`
         display: flex;
         gap: 32px;
         margin: 0 32px;
+        
     }
 `;
 

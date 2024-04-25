@@ -36,7 +36,8 @@ const HeaderMenuItems = [
 export const DesktopMenu: React.FC = () => {
     return (
         <S.DesktopMenu>
-            <Menu items={HeaderMenuItems}/>
+            <Menu MenuStyledProps={S.NavLink}
+                  items={HeaderMenuItems}/>
             <FlexWrapper align={'center'}>
                 <SelectEatPlace/>
                 <DateStream/>
