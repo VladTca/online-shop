@@ -6,7 +6,7 @@ const LeftSidebar = styled.aside`
 
     border-right: 1px solid ${theme.colors.Neutral30};
     background-color: ${theme.colors.Neutral10};
-    padding: 25px 25px 0 25px;
+    padding:24px;
     position: fixed;
     top: 78px;
     left: 0;
@@ -14,7 +14,7 @@ const LeftSidebar = styled.aside`
 
    
     width: 125px;
-    //margin-top: 76px;
+   
 `;
 
 const MenuItem = styled.li`

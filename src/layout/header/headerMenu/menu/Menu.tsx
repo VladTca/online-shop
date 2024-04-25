@@ -13,10 +13,12 @@ type MenuPropsTypes = {
 
 type MenuProps = {
     items: MenuPropsTypes[];
-   PropForFlexWrapper?: string; // Ваш новый пропс
+    PropForFlexWrapper1?: string;
+    PropForFlexWrapper2?: string;
+    PropForFlexWrapper3?: string; // Ваш новый пропс
 };
 
-export const Menu: React.FC<MenuProps> = ({ items, PropForFlexWrapper }) => {
+export const Menu: React.FC<MenuProps> = ({items, PropForFlexWrapper1, PropForFlexWrapper2, PropForFlexWrapper3}) => {
     return (
         <ul>
             {items.map((item, index) => {
@@ -29,7 +31,7 @@ export const Menu: React.FC<MenuProps> = ({ items, PropForFlexWrapper }) => {
                             smooth={true}
                             to={item.href}
                         >
-                            <FlexWrapper direction={PropForFlexWrapper} justify={'center'} align={'normal'}>
+                            <FlexWrapper direction={PropForFlexWrapper1} align={PropForFlexWrapper2} justify={'center'}>
                                 <Icon iconId={item.svg}/>
                                 {item.title}
                             </FlexWrapper>

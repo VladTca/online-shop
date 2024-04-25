@@ -1,7 +1,5 @@
 import React from 'react';
 import {S} from "./LeftSidebar_Styles";
-
-import {FlexWrapper} from "../../components/FlexWrapper";
 import {Menu} from "../header/headerMenu/menu/Menu";
 
 
@@ -50,7 +48,7 @@ export const LeftSidebar = () => {
         <S.LeftSidebar>
 
                 <S.LeftSidebarMenu>
-                   <Menu PropForFlexWrapper={'column'} items={LeftSBicon}/>
+                   <Menu PropForFlexWrapper1={'column'} PropForFlexWrapper2={'center'} items={LeftSBicon}/>
                 </S.LeftSidebarMenu>
 
         </S.LeftSidebar>

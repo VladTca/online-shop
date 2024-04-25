@@ -21,6 +21,7 @@ const NavLink = styled(Link)`
     justify-content: center;
     text-align: center;
     align-items: center;
+    cursor: pointer;
     &:hover {
         color: ${theme.colors.Primary60};
 
