@@ -1,11 +1,12 @@
 import React from 'react';
 import {S} from "./OrderDetails_Styles";
 import {Order} from './order/Order';
-import mieKuahPedas from '../../../assets/images/Mie-kuah-pedas.png.png';
-import ayamKentang from '../../../assets/images/Ayam-kentang.png.png';
+import mieKuahPedas from '../../../assets/images/Mie-kuah-pedas.png';
+import ayamKentang from '../../../assets/images/Ayam-kentang.png';
 import steakSapiBakar from '../../../assets/images/Steak-sapi-bakar.png';
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Container} from "../../../components/Container";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 
 const orders = [
     {
@@ -29,17 +30,18 @@ export const OrderDetails: React.FC = () => {
     return (
         <S.Orders>
             <Container>
+                <SectionTitle>Order Details</SectionTitle>
+                <FlexWrapper>
 
+                    {orders.map((o, i) => {
+                        return <Order photo={o.photo}
+                                      name={o.name}
+                                      price={o.price}
+                                      key={i}/>
+                    })}
+
+                </FlexWrapper>
             </Container>
-            <SectionTitle>Order Details</SectionTitle>
-
-            {/*{orders.map((o, index) => {*/}
-            {/*    return <Order key={index}*/}
-            {/*                  photo={o.photo}*/}
-            {/*                  name={o.name}*/}
-            {/*                  price={o.price} />*/}
-            {/*}}*/}
-
         </S.Orders>
     );
 };

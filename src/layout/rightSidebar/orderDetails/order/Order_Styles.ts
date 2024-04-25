@@ -19,6 +19,14 @@ const Price = styled.div`
 
 `
 
+const PriceAndAddContainer = styled.div`
+
+`
+
+const AddItemBlock = styled.div`
+
+`
+
 
 export const S = {
     Order,
@@ -26,5 +34,7 @@ export const S = {
     InfoBlock,
     PriceAndCountBlock,
     Price,
+    PriceAndAddContainer,
+    AddItemBlock,
 
 }
