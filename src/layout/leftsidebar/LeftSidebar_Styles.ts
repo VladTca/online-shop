@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
-import {Link} from "react-scroll";
+
 
 const LeftSidebar = styled.aside`
 
@@ -22,24 +22,20 @@ const MenuItem = styled.li`
 `;
 
 
-const NavLink = styled(Link)`
-    color: ${theme.colors.Neutral60};
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 30px;
-    font-weight: 400;
 
-    &:hover {
-        color: ${theme.colors.Primary60};
 
-    }
+const LeftSidebarMenu = styled.nav`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
 `;
-
-
 
 export const S = {
     LeftSidebar,
-    NavLink,
+
     MenuItem,
+    LeftSidebarMenu
 
 }

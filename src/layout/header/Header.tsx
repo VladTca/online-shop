@@ -15,7 +15,7 @@ export const Header: React.FC = () => {
 
                     <FlexWrapper>
                         <S.BackWrapper>
-                        <Icon iconId={"arrow-left"}/>
+                        <Icon iconId={"arrow-left"} width={'20'} height={'20'} viewBox={"0 0 20 20"}/>
                         </S.BackWrapper>
 
                         <S.LogoStyles>

@@ -12,12 +12,15 @@ const MenuItem = styled.li`
 
 const NavLink = styled(Link)`
     color: ${theme.colors.Neutral60};
-    text-align: center;
+   
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
- 
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     &:hover {
         color: ${theme.colors.Primary60};
 
@@ -26,19 +29,25 @@ const NavLink = styled(Link)`
 
 
 const DesktopMenu = styled.nav`
+    display: flex;
+ 
+    justify-content: center;
+    align-items: end;
+   
+
+
     ul {
         display: flex;
         gap: 32px;
-        justify-content: center;
         margin: 0 32px;
+    }
 `;
 
 const Photo = styled.img`
   width: 44px;
   height: 44px;
   object-fit: cover;
-  //margin-right: 24px;
-  
+ 
 `;
 
 export const S = {

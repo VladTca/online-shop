@@ -1,11 +1,11 @@
 import React from "react";
-import { Menu } from "../menu/Menu";
-import { S } from "../HeaderMenu_Styles";
+import {Menu} from "../menu/Menu";
+import {S} from "../HeaderMenu_Styles";
 
 import {DateStream} from "../../../../components/datestream/DateStream";
 import avatarka from "../../../../assets/images/Profile.png";
 import {SelectEatPlace} from "../../../../components/selectplace/SelectEatPlace";
-
+import {FlexWrapper} from "../../../../components/FlexWrapper";
 
 
 const HeaderMenuItems = [
@@ -34,12 +34,14 @@ const HeaderMenuItems = [
 
 
 export const DesktopMenu: React.FC = () => {
-  return (
-    <S.DesktopMenu>
-      <Menu items={HeaderMenuItems} />
-        <SelectEatPlace/>
-        <DateStream/>
-        <S.Photo src={avatarka} alt={'avatarka'}/>
-    </S.DesktopMenu>
-  );
+    return (
+        <S.DesktopMenu>
+            <Menu items={HeaderMenuItems}/>
+            <FlexWrapper align={'center'}>
+                <SelectEatPlace/>
+                <DateStream/>
+                <S.Photo src={avatarka} alt={'avatarka'}/>
+            </FlexWrapper>
+        </S.DesktopMenu>
+    );
 };
