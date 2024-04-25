@@ -1,6 +1,7 @@
 import React from "react";
 import {S} from "../HeaderMenu_Styles";
 import {Icon} from "../../../../components/icon/Icon";
+import {FlexWrapper} from "../../../../components/FlexWrapper";
 
 
 type MenuPropsTypes = {
@@ -10,8 +11,14 @@ type MenuPropsTypes = {
 
 };
 
+type MenuProps = {
+    items: MenuPropsTypes[];
+    PropForFlexWrapper1?: string;
+    PropForFlexWrapper2?: string;
+    PropForFlexWrapper3?: string; // Ваш новый пропс
+};
 
-export const Menu: React.FC<{items: MenuPropsTypes[]}> = ({ items }) => {
+export const Menu: React.FC<MenuProps> = ({items, PropForFlexWrapper1, PropForFlexWrapper2, PropForFlexWrapper3}) => {
     return (
         <ul>
             {items.map((item, index) => {
@@ -24,8 +31,10 @@ export const Menu: React.FC<{items: MenuPropsTypes[]}> = ({ items }) => {
                             smooth={true}
                             to={item.href}
                         >
-                            <Icon iconId={item.svg}/>
-                            {item.title}
+                            <FlexWrapper direction={PropForFlexWrapper1} align={PropForFlexWrapper2} justify={'center'}>
+                                <Icon iconId={item.svg}/>
+                                {item.title}
+                            </FlexWrapper>
                         </S.NavLink>
                     </S.MenuItem>
                 );

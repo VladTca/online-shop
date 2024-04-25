@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
-import {Link} from "react-scroll";
+
 
 const LeftSidebar = styled.aside`
 
     border-right: 1px solid ${theme.colors.Neutral30};
     background-color: ${theme.colors.Neutral10};
-    padding: 25px 25px 0 25px;
+    padding:24px;
     position: fixed;
     top: 78px;
     left: 0;
@@ -14,7 +14,7 @@ const LeftSidebar = styled.aside`
 
    
     width: 125px;
-    //margin-top: 76px;
+   
 `;
 
 const MenuItem = styled.li`
@@ -22,24 +22,20 @@ const MenuItem = styled.li`
 `;
 
 
-const NavLink = styled(Link)`
-    color: ${theme.colors.Neutral60};
-    text-align: center;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 30px;
-    font-weight: 400;
 
-    &:hover {
-        color: ${theme.colors.Primary60};
 
-    }
+const LeftSidebarMenu = styled.nav`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
 `;
-
-
 
 export const S = {
     LeftSidebar,
-    NavLink,
+
     MenuItem,
+    LeftSidebarMenu
 
 }

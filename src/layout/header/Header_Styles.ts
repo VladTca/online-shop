@@ -11,7 +11,6 @@ const Header = styled.header`
     left: 0;
     right: 0;
 
-
 height: 76px;
     
 `;
@@ -35,17 +34,34 @@ const MainSubtitle = styled.h3`
     `;
 
 const BackWrapper = styled.div`
-    width: 60px;
-    border-right: 1px solid ${theme.colors.Neutral30};
+    width: 32px;
+    margin-right: 24px;
+    
     height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
     cursor: pointer;
+    position: relative;
+    z-index: 0;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 28px;
+        
+        height: 28px;
+        border-radius: 50%;
+        border: 1px solid ${theme.colors.Neutral30};
+        position: absolute;
+        z-index: -1;
+    }
 `;
 
 const LogoStyles = styled.div`
-margin:0 24px;
+padding:0 24px;
+    border-left: 1px solid ${theme.colors.Neutral30};
 `
 
 
