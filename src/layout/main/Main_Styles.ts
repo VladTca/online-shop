@@ -37,57 +37,49 @@ const Dashboard = styled.div`
 
 `;
 
+const SearchMenuStyles= styled.nav`
+    display: flex;
+
+    align-items: center;
+    width: 100%;
+
+
+    ul {
+        display: flex;
+        gap: 8px;
+        
+        padding-right: 24px;
+    }
+`;
 
 const SearchInputBlok = styled.div`
     padding: 22px 24px;
     display: flex;
     align-items: center;
     gap:10px;
-
+    border-right: 1px solid ${theme.colors.Neutral30};
+    width:50%;
+margin-right: 24px;
 `;
 
 const SearchInputField = styled.input`
 
-
+width: 100%;
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
 
-
-`;
-
-
-
-const SearchMenuStyles= styled.nav`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &::placeholder {
+      color: ${theme.colors.Neutral40};
+    }
+    //border:none;
+    border: 1px solid ${theme.colors.Neutral100};
     
 
-    input {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 150%;
-
-        &::placeholder {
-            content: 'Search menu';
-            color: ${theme.colors.Neutral40};
-        }
-    ;
-        //border:none;
-        border: 1px solid ${theme.colors.Neutral100};
-       
-
-    }
-
-
-    ul {
-        display: flex;
-        gap: 8px;
-        margin: 0 24px;
-
-    }
 `;
+
+
+
 
 const SearchMenu = styled(Link)`
     color: ${theme.colors.Neutral100};
