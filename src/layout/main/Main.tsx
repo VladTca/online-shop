@@ -1,8 +1,7 @@
 import React from 'react';
 import {S} from './Main_Styles';
 import {Menu} from "../header/headerMenu/menu/Menu";
-import {FlexWrapper} from "../../components/FlexWrapper";
-
+import {Icon} from "../../components/icon/Icon";
 
 
 const SearchMenuItems = [
@@ -40,18 +39,23 @@ const SearchMenuItems = [
 ]
 
 
-
-
 export const Main = () => {
     return (
         <S.Main>
 
-            <div style={{paddingBottom:'20px'}}>Dashboard/Food</div>
-            <S.SearchMenuStyles>
-                    <input type={'search'}/>
+            <S.MainHeader>
+                <S.Dashboard>
+                    Dashboard/Food
+                </S.Dashboard>
+                <S.SearchMenuStyles>
+
+                    <S.SearchInputBlok>
+                        <Icon iconId={'search'}/>
+                        <S.SearchInputField type={'search'}/>
+                    </S.SearchInputBlok>
                     <Menu PropForFlexWrapper1={'row'} PropForFlexWrapper2={'center'} items={SearchMenuItems}
                           MenuStyledProps={S.SearchMenu}/>
-            </S.SearchMenuStyles>
+                </S.SearchMenuStyles></S.MainHeader>
         </S.Main>
     );
 };

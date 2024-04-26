@@ -3,12 +3,90 @@ import {Link} from "react-scroll";
 import {theme} from "../../styles/Theme";
 
 const Main = styled.main`
-    border: 1px solid red;
-    margin: 76px 360px 0 125px;
+
+    
     display: flex;
+    
+  
+`;
+
+
+const MainHeader = styled.div`
+    display: flex;
+    width: calc(100% - 125px - 360px);
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: start;
+    position: fixed;
+    border-bottom: 1px solid ${theme.colors.Neutral30};
+    margin: 76px 360px 0 125px;
+
+`;
+
+const Dashboard = styled.div`
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;
+    padding: 8px 16px;
+    border-bottom: 1px solid ${theme.colors.Neutral30};
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: ${theme.colors.Neutral60};
+
+`;
+
+
+const SearchInputBlok = styled.div`
+    padding: 22px 24px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+`;
+
+const SearchInputField = styled.input`
+
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+
+
+`;
+
+
+
+const SearchMenuStyles= styled.nav`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    input {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+
+        &::placeholder {
+            content: 'Search menu';
+            color: ${theme.colors.Neutral40};
+        }
+    ;
+        //border:none;
+        border: 1px solid ${theme.colors.Neutral100};
+       
+
+    }
+
+
+    ul {
+        display: flex;
+        gap: 8px;
+        margin: 0 24px;
+
+    }
 `;
 
 const SearchMenu = styled(Link)`
@@ -18,10 +96,6 @@ const SearchMenu = styled(Link)`
     background: ${theme.colors.Neutral10};
     padding: 8px 16px;
 
-
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 140%;
 
     display: flex;
 
@@ -38,25 +112,14 @@ const SearchMenu = styled(Link)`
         background: ${theme.colors.Primary10};
     }
 }
-`
-
-const SearchMenuStyles= styled.nav`
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-
-    ul {
-        display: flex;
-        gap: 32px;
-        margin: 0 32px;
-
-    }
-`
+`;
 
 export const S = {
     Main,
     SearchMenu,
-    SearchMenuStyles
+    SearchMenuStyles,
+    MainHeader,
+    SearchInputBlok,
+    SearchInputField,
+    Dashboard
 }
