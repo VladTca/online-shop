@@ -14,7 +14,7 @@ const LeftSidebar = styled.aside`
     bottom: 0;
 
    
-    width: 125px;
+    //width: 125px;
    
 `;
 

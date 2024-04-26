@@ -18,7 +18,6 @@ type MenuProps = {
     items: MenuPropsTypes[];
     PropForFlexWrapper1?: string;
     PropForFlexWrapper2?: string;
-    PropForFlexWrapper3?: string;
     widthM?: string;
     heightM?: string;
     viewBoxM?: string;
@@ -29,7 +28,6 @@ export const Menu: React.FC<MenuProps> = ({
                                               items,
                                               PropForFlexWrapper1,
                                               PropForFlexWrapper2,
-                                              PropForFlexWrapper3,
                                               MenuStyledProps,
                                               widthM,
                                               heightM,

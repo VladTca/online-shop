@@ -3,6 +3,7 @@ import './App.css';
 import { Header } from './layout/header/Header';
 import { LeftSidebar } from './layout/leftsidebar/LeftSidebar';
 import {RightSidebar} from "./layout/rightSidebar/RightSidebar";
+import {Main} from "./layout/main/Main";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Header/>
         <LeftSidebar/>
         <RightSidebar/>
+        <Main/>
     </div>
   );
 }
