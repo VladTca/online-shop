@@ -8,6 +8,9 @@ type MenuPropsTypes = {
     href: string;
     svg: string;
     title: string;
+    widthM?: string;
+    heightM?: string;
+    viewBoxM?: string;
 
 };
 
@@ -15,27 +18,41 @@ type MenuProps = {
     items: MenuPropsTypes[];
     PropForFlexWrapper1?: string;
     PropForFlexWrapper2?: string;
-    PropForFlexWrapper3?: string; // Ваш новый пропс
+    PropForFlexWrapper3?: string;
+    widthM?: string;
+    heightM?: string;
+    viewBoxM?: string;
+    MenuStyledProps: React.ComponentType<any>;
 };
 
-export const Menu: React.FC<MenuProps> = ({items, PropForFlexWrapper1, PropForFlexWrapper2, PropForFlexWrapper3}) => {
+export const Menu: React.FC<MenuProps> = ({
+                                              items,
+                                              PropForFlexWrapper1,
+                                              PropForFlexWrapper2,
+                                              PropForFlexWrapper3,
+                                              MenuStyledProps,
+                                              widthM,
+                                              heightM,
+                                              viewBoxM
+                                          }) => {
     return (
         <ul>
             {items.map((item, index) => {
                 return (
                     <S.MenuItem key={index}>
-                        <S.NavLink
+                        <MenuStyledProps
                             activeClass="active"
                             offset={-70}
                             spy={true}
                             smooth={true}
                             to={item.href}
                         >
-                            <FlexWrapper direction={PropForFlexWrapper1} align={PropForFlexWrapper2} justify={'center'}>
-                                <Icon iconId={item.svg}/>
+                            <FlexWrapper gap={'8px'} direction={PropForFlexWrapper1} align={PropForFlexWrapper2}
+                                         justify={'center'}>
+                                <Icon width={widthM} height={heightM} viewBox={viewBoxM} iconId={item.svg}/>
                                 {item.title}
                             </FlexWrapper>
-                        </S.NavLink>
+                        </MenuStyledProps>
                     </S.MenuItem>
                 );
             })}

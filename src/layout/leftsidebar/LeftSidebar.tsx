@@ -3,40 +3,39 @@ import {S} from "./LeftSidebar_Styles";
 import {Menu} from "../header/headerMenu/menu/Menu";
 
 
-
-const LeftSBicon=[
+const LeftSBicon = [
     {
         svg: 'kofe',
         title: 'Coffee',
         href: 'coffee'
     },
     {
-        svg:'drink',
+        svg: 'drink',
         title: 'Beverages',
         href: 'beverages'
 
 
     },
     {
-        svg:'food',
+        svg: 'food',
         title: 'Food',
         href: 'food'
 
     },
     {
-        svg:'pasta',
+        svg: 'pasta',
         title: 'Appetizer',
         href: 'appetizer'
 
     },
     {
-        svg:'lasagna',
+        svg: 'lasagna',
         title: 'Bread',
         href: 'bread'
 
     },
     {
-        svg:'egg',
+        svg: 'egg',
         title: 'Snack',
         href: 'snack'
     }
@@ -47,9 +46,10 @@ export const LeftSidebar = () => {
     return (
         <S.LeftSidebar>
 
-                <S.LeftSidebarMenu>
-                   <Menu PropForFlexWrapper1={'column'} PropForFlexWrapper2={'center'} items={LeftSBicon}/>
-                </S.LeftSidebarMenu>
+            <S.LeftSidebarMenu>
+                <Menu widthM={'32'} heightM={'32'} viewBoxM={'0 0 32 32'} MenuStyledProps={S.NavBar}
+                      PropForFlexWrapper1={'column'} PropForFlexWrapper2={'center'} items={LeftSBicon}/>
+            </S.LeftSidebarMenu>
 
         </S.LeftSidebar>
     );
