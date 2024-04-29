@@ -5,7 +5,7 @@ const RightSidebar = styled.aside`
 
     border-left: 1px solid ${theme.colors.Neutral30};
     background-color: ${theme.colors.Neutral10};
-    padding: 25px 25px 0 25px;
+    padding-top: 16px;
     position: fixed;
     top: 78px;
     right: 0;

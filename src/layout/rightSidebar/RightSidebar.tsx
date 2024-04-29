@@ -3,11 +3,12 @@ import {S} from './RightSidebar_Styles'
 import {CustomerInformationForm} from "./customerInformationForm/CustomerInformationForm";
 import {OrderDetails} from "./orderDetails/OrderDetails";
 import {OrderSummary} from "./orderSummary/OrderSummary";
+import {Switcher} from "./switcher/Switcher";
 
 export const RightSidebar: React.FC = () => {
     return (
         <S.RightSidebar>
-            {/*<Tabs/>*/}
+            <Switcher/>
             <CustomerInformationForm/>
             <OrderDetails/>
             <OrderSummary/>

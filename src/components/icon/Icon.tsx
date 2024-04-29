@@ -18,7 +18,7 @@ export const Icon:React.FC<IconPropsType> = (props: IconPropsType) => {
       height={props.height || "24"}
       viewBox={props.viewBox || "0 0 24 24"}
       fill={props.fill || "none"}
-        stroke={props.stroke || theme.colors.Neutral60  }
+      stroke={props.stroke || theme.colors.Neutral60}
       xmlns="http://www.w3.org/2000/svg"
     >
       <use xlinkHref={`${iconsSprite}#${props.iconId}`} />
