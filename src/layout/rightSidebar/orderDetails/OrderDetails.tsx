@@ -31,7 +31,7 @@ export const OrderDetails: React.FC = () => {
         <S.Orders>
             <Container>
                 <SectionTitle>Order Details</SectionTitle>
-                <FlexWrapper>
+                <FlexWrapper direction={'column'}>
 
                     {orders.map((o, i) => {
                         return <Order photo={o.photo}

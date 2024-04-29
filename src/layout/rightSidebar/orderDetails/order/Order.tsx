@@ -16,23 +16,23 @@ type OrderPropsType = {
 export const Order: React.FC<OrderPropsType> = (props: OrderPropsType) => {
     return (
         <S.Order>
-            <FlexWrapper>
+            <FlexWrapper gap={'12px'} align={'center'} justify={'center'}>
                 <ImageWrapper>
                     <S.Photo src={props.photo}/>
                 </ImageWrapper>
                 <S.InfoBlock>
-                    <SubSectionTitle>${props.name}</SubSectionTitle>
-                <S.PriceAndAddContainer>
-                    <S.PriceAndCountBlock>
-                        <span>Price</span>
-                        <S.Price>{props.price}</S.Price>
-                    </S.PriceAndCountBlock>
-                    <S.AddItemBlock>
-                        <Icon iconId={'plus'}/>
-                        <span>1</span>
-                        <Icon iconId={'minus'}/>
-                    </S.AddItemBlock>
-                </S.PriceAndAddContainer>
+                    <SubSectionTitle>{props.name}</SubSectionTitle>
+                    <S.PriceAndAddContainer>
+                        <S.PriceAndCountBlock>
+                            <span>Price</span>
+                            <S.Price>{props.price}</S.Price>
+                        </S.PriceAndCountBlock>
+                        <S.AddItemBlock>
+                            <Icon iconId={'minus'}/>
+                            <span>1</span>
+                            <Icon iconId={'plus'}/>
+                        </S.AddItemBlock>
+                    </S.PriceAndAddContainer>
                 </S.InfoBlock>
             </FlexWrapper>
         </S.Order>
