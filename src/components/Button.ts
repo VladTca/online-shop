@@ -2,13 +2,14 @@ import styled, {css} from "styled-components";
 import {theme} from "../styles/Theme";
 
 type BtnPropsType = {
-    btnType?: 'activeSwitcher' | 'inactiveSwitcher' | 'addNote' | 'PayNow'
+    btnType?: 'activeSwitcher' | 'inactiveSwitcher' | 'addNote'
 }
 
 export const Button = styled.button<BtnPropsType>`
     width: 152px;
-    padding: 8px 16px;
+    height: 36px;
     border-radius: 40px;
+    font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -20,40 +21,17 @@ export const Button = styled.button<BtnPropsType>`
     `}
     
     ${props => props.btnType === 'inactiveSwitcher' && css<BtnPropsType>`
-         color: ${theme.colors.Neutral60};
+        background-color: rgba(97, 218, 251, 0);
+        color: ${theme.colors.Neutral60};
     `}
     
     ${props => props.btnType === 'addNote' && css<BtnPropsType>`
-        
+        height: 48px;
         width: 100%;
         font-weight: 600;
         font-size: 16px;
         line-height: 150%;
-        background-color:${ theme.colors.Neutral20};
-        color: ${theme.colors.Neutral60};
-        border-radius: 50px;
-        padding: 12px 24px;
-        
-        &:hover {
-            background-color: ${theme.colors.Primary10};
-            color: ${theme.colors.Primary60};
-        }
+        background-color: ${theme.colors.Primary10};
+        color: ${theme.colors.Primary60};
     `}
-    ${props => props.btnType === 'PayNow' && css<BtnPropsType>`
-        width: 100%;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 150%;
-        background-color:${ theme.colors.Neutral20};
-        color: ${theme.colors.Neutral60};
-        border-radius: 50px;
-        padding: 12px;
-      
-
-        &:hover {
-            background-color: ${theme.colors.Primary60};
-            color: ${theme.colors.Neutral10};
-        }
-    `}
-    
 `
