@@ -29,7 +29,7 @@ export const Order: React.FC<OrderPropsType> = (props: OrderPropsType) => {
                         </S.PriceAndCountBlock>
                         <S.AddItemBlock>
                             <Icon iconId={'minus'}/>
-                            <span>1</span>
+                            <span> 1 </span>
                             <Icon iconId={'plus'}/>
                         </S.AddItemBlock>
                     </S.PriceAndAddContainer>

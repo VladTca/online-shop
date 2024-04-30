@@ -66,7 +66,9 @@ const Price = styled.div`
 
 
 const AddItemBlock = styled.div`
-
+display: flex;
+    align-items: center;
+    gap: 5px;
 `
 
 
