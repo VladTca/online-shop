@@ -16,8 +16,6 @@ export const Switcher:React.FC = () => {
 
             </S.SwitcherContainer>
 
-
-
     );
 };
 
