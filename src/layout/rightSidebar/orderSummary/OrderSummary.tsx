@@ -1,7 +1,5 @@
 import React from 'react';
 import {S} from './OrderSummary_Styles'
-import {Container} from "../../../components/Container";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Button} from "../../../components/Button";
 
 export const OrderSummary: React.FC = () => {
@@ -10,8 +8,8 @@ export const OrderSummary: React.FC = () => {
 
 
                 <S.SubSummaryBlock>
-                    Subtotal <span>$ 50.00</span>
-                    Tax (10%) <span>$ 12.13</span>
+                    <div>Subtotal <span>$ 50.00</span></div>
+                    <div>Tax (10%) <span>$ 12.13</span></div>
                 </S.SubSummaryBlock>
                 <S.Total>
                     Total <span>$ 62.13</span>

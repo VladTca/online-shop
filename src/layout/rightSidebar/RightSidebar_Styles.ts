@@ -9,7 +9,6 @@ const RightSidebar = styled.aside`
     top: 78px;
     right: 0;
     bottom: 0;
-
    
     width: 360px;
 
