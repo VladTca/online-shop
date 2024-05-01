@@ -12,7 +12,7 @@ const RightSidebar = styled.aside`
 
    
     width: 360px;
-    //margin-top: 76px;
+
 `;
 
 

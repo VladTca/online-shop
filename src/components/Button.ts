@@ -2,7 +2,7 @@ import styled, {css} from "styled-components";
 import {theme} from "../styles/Theme";
 
 type BtnPropsType = {
-    btnType?: 'activeSwitcher' | 'inactiveSwitcher' | 'addNote'
+    btnType?: 'activeSwitcher' | 'inactiveSwitcher' | 'addNote' | 'PayNow'
 }
 
 export const Button = styled.button<BtnPropsType>`
@@ -39,4 +39,21 @@ export const Button = styled.button<BtnPropsType>`
             color: ${theme.colors.Primary60};
         }
     `}
+    ${props => props.btnType === 'PayNow' && css<BtnPropsType>`
+        width: 100%;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        background-color:${ theme.colors.Neutral20};
+        color: ${theme.colors.Neutral60};
+        border-radius: 50px;
+        padding: 12px;
+      
+
+        &:hover {
+            background-color: ${theme.colors.Primary60};
+            color: ${theme.colors.Neutral10};
+        }
+    `}
+    
 `
