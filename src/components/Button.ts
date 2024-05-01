@@ -7,7 +7,6 @@ type BtnPropsType = {
 
 export const Button = styled.button<BtnPropsType>`
     width: 152px;
-    height: 36px;
     padding: 8px 16px;
     border-radius: 40px;
     font-weight: 400;
@@ -25,12 +24,19 @@ export const Button = styled.button<BtnPropsType>`
     `}
     
     ${props => props.btnType === 'addNote' && css<BtnPropsType>`
-        height: 48px;
+        
         width: 100%;
         font-weight: 600;
         font-size: 16px;
         line-height: 150%;
-        background-color: ${theme.colors.Primary10};
-        color: ${theme.colors.Primary60};
+        background-color:${ theme.colors.Neutral20};
+        color: ${theme.colors.Neutral60};
+        border-radius: 50px;
+        padding: 12px 24px;
+        
+        &:hover {
+            background-color: ${theme.colors.Primary10};
+            color: ${theme.colors.Primary60};
+        }
     `}
 `

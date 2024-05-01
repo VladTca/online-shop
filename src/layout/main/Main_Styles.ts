@@ -72,8 +72,8 @@ width: 100%;
     &::placeholder {
       color: ${theme.colors.Neutral40};
     }
-    //border:none;
-    border: 1px solid ${theme.colors.Neutral100};
+    border:none;
+  
     
 
 `;

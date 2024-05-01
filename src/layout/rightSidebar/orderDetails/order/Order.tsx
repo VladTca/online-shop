@@ -17,9 +17,9 @@ export const Order: React.FC<OrderPropsType> = (props: OrderPropsType) => {
     return (
         <S.Order>
             <FlexWrapper gap={'12px'} align={'center'} justify={'center'}>
-                <ImageWrapper>
+
                     <S.Photo src={props.photo}/>
-                </ImageWrapper>
+
                 <S.InfoBlock>
                     <SubSectionTitle>{props.name}</SubSectionTitle>
                     <S.PriceAndAddContainer>

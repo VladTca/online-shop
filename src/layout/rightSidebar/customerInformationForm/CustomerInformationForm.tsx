@@ -1,9 +1,9 @@
 import React from 'react';
 import {S} from "./CustomerInformationForm_Styles";
-import {Container} from "../../../components/Container";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Button} from '../../../components/Button'
+import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Icon} from "../../../components/icon/Icon";
 
 export const CustomerInformationForm: React.FC = () => {
     return (
@@ -13,7 +13,12 @@ export const CustomerInformationForm: React.FC = () => {
 
                     <S.Form>
                         <S.Field placeholder={'Customer name'}/>
-                        <S.Field placeholder={'Select table'} type={'button'}/>
+
+                        <S.FieldContainer>
+                            <S.Field placeholder={'Select table'}/>
+                            <Icon iconId={'chevron-right'}/>
+                        </S.FieldContainer>
+
                         <Button btnType={'addNote'}>Add note</Button>
                     </S.Form>
 

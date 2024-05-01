@@ -2,10 +2,10 @@ import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 
 const Order = styled.div`
-    max-height: 106px;
-    max-width: 312px;
+    display: flex;
     border-bottom: 1px solid ${theme.colors.Neutral30};
     padding: 16px 0;
+
     // &::before {
     //     content: '';
     //     display: inline-block;
@@ -24,13 +24,15 @@ const Photo = styled.img`
     width: 74px;
     height: 74px;
     border-radius: 12px;
+    object-fit:cover;
 `
 
 const InfoBlock = styled.div`
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-height: 74px;
+ 
     padding-bottom: 16px;
 
 

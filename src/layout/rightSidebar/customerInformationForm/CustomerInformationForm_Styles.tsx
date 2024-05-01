@@ -2,24 +2,24 @@ import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 
 const CustomerInformationForm = styled.div`
-    margin: 0 24px 24px 24px;
+    margin: 0 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid ${theme.colors.Neutral30};;
+    border-bottom: 1px solid ${theme.colors.Neutral30};
 `
 
 const Form = styled.form`
     width: 100%;
     padding-top: 16px;
+    
 `
 
 const Field = styled.input`
     width: 100%;
-    height: 48px;
     background-color: ${theme.colors.Neutral10};
     border-radius: 58px;
     border: 1px solid ${theme.colors.Neutral30};
-    padding-left: 16px;
-    margin-bottom: 16px;
+    padding:12px 16px;
+  
     
     &::placeholder {
         font-weight: 400;
@@ -27,12 +27,28 @@ const Field = styled.input`
         line-height: 150%;
         color: ${theme.colors.Neutral40};
     }
+    
 `
+
+const FieldContainer = styled.div`
+    position: relative;
+    width: 100%;
+    margin: 12px 0 16px 0;
+    
+    svg {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+`;
 
 export const S = {
     Form,
     Field,
-    CustomerInformationForm
+    CustomerInformationForm,
+    FieldContainer
 
 }
 

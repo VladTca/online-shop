@@ -29,8 +29,8 @@ const orders = [
 export const OrderDetails: React.FC = () => {
     return (
         <S.Orders>
-            <Container>
-                <SectionTitle>Order Details</SectionTitle>
+
+                <SectionTitle>Order details</SectionTitle>
                 <FlexWrapper direction={'column'}>
 
                     {orders.map((o, i) => {
@@ -41,7 +41,7 @@ export const OrderDetails: React.FC = () => {
                     })}
 
                 </FlexWrapper>
-            </Container>
+
         </S.Orders>
     );
 };

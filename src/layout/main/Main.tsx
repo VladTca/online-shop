@@ -51,7 +51,7 @@ export const Main = () => {
 
                     <S.SearchInputBlok>
                         <Icon iconId={'search'}/>
-                        <S.SearchInputField type={'search'} placeholder={'Search menu'}/>
+                        <S.SearchInputField type={'search'} placeholder={'Search menu...'}/>
                     </S.SearchInputBlok>
                     <Menu PropForFlexWrapper1={'row'} PropForFlexWrapper2={'center'} items={SearchMenuItems}
                           MenuStyledProps={S.SearchMenu}/>
