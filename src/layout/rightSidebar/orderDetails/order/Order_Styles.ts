@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 
 const Order = styled.div`
-    display: flex;
+    
     border-bottom: 1px solid ${theme.colors.Neutral30};
     padding: 16px 0;
 
@@ -25,36 +25,33 @@ const Photo = styled.img`
     height: 74px;
     border-radius: 12px;
     object-fit:cover;
+     
 `
 
 const InfoBlock = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
- 
-    padding-bottom: 16px;
-
-
+   gap: 8px;
+    width: 100%;
+    
 `
 
 const PriceAndAddContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 `
 
 const PriceAndCountBlock = styled.div`
     text-align: left;
-    
+
     span {
         color: ${theme.colors.Neutral50};
         font-size: 12px;
-        line-height: 15.6px;
         font-weight: 400;
-        font-family: Poppins, sans-serif;
+        line-height: 130%;
     }
-    
+
 `
 
 const Price = styled.div`
@@ -62,7 +59,6 @@ const Price = styled.div`
     font-size: 16px;
     line-height: 150%;
     font-weight: 600;
-    font-family: Poppins, sans-serif;
 `
 
 
@@ -70,7 +66,36 @@ const Price = styled.div`
 const AddItemBlock = styled.div`
 display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
+
+    span {
+        color: ${theme.colors.Neutral100};
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%
+    }
+`
+
+const WrapperPlusMinus = styled.div`
+    padding: 8px;
+    border-radius: 50px;
+    background-color: ${theme.colors.Neutral30};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    svg {
+        stroke: ${theme.colors.Neutral50};
+    }
+    
+    &:hover {
+        background-color: ${theme.colors.Neutral100};
+        
+        svg {
+            stroke: ${theme.colors.Neutral10};
+        }
+    }
 `
 
 
@@ -82,5 +107,6 @@ export const S = {
     Price,
     PriceAndAddContainer,
     AddItemBlock,
+    WrapperPlusMinus
 
 }
