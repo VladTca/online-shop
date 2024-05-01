@@ -15,7 +15,7 @@ export const OrderSummary: React.FC = () => {
                     Total <span>$ 62.13</span>
                 </S.Total>
 
-            <Button btnType={'PayNow'}>Pay Now</Button>
+            {/*<Button btnType={'PayNow'}>Pay Now</Button>*/}
 
         </S.OrderSummary>
     );
