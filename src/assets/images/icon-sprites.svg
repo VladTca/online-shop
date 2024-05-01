@@ -139,7 +139,7 @@
     </g>
 
     <g id="minus">
-        <path id="Vector 181" d="M4.16675 10H15.8334" stroke="#9C9C9C" stroke-width="1.5" stroke-linecap="round"/>
+        <path id="Vector 181" d="M4.16675 10H15.8334" stroke-width="1.5" stroke-linecap="round"/>
     </g>
 
     <g id="note">
@@ -166,7 +166,7 @@
     </g>
 
     <g id="plus">
-        <path id="Vector 182" d="M4.16675 9.99999H15.8334M10.0001 4.16666V15.8333" stroke="black" stroke-width="1.5"
+        <path id="Vector 182" d="M4.16675 9.99999H15.8334M10.0001 4.16666V15.8333" stroke-width="1.5"
               stroke-linecap="round"/>
     </g>
 
