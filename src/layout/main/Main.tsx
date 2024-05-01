@@ -45,7 +45,7 @@ export const Main = () => {
 
             <S.MainHeader>
                 <S.Dashboard>
-                    Dashboard/Food
+                    Dashboard/ <span>Food</span>
                 </S.Dashboard>
                 <S.SearchMenuStyles>
 

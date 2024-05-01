@@ -45,6 +45,17 @@ const BackWrapper = styled.div`
     cursor: pointer;
     position: relative;
     z-index: 0;
+    
+    svg {
+        stroke: ${theme.colors.Neutral100};
+    }
+    &:hover {
+        svg {
+            stroke: ${theme.colors.Primary60};
+            transform: scale(1.5);
+        }
+        
+    }
 
     &::before {
         content: "";
@@ -57,6 +68,7 @@ const BackWrapper = styled.div`
         position: absolute;
         z-index: -1;
     }
+    
 `;
 
 const LogoStyles = styled.div`

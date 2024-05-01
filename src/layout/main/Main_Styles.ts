@@ -33,7 +33,11 @@ const Dashboard = styled.div`
     display: flex;
     align-items: center;
     justify-content: start;
-    color: ${theme.colors.Neutral60};
+    color: ${theme.colors.Primary60};
+    
+    span {
+        color: ${theme.colors.Neutral60};
+    }
 
 `;
 
