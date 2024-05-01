@@ -8,8 +8,8 @@ type BtnPropsType = {
 export const Button = styled.button<BtnPropsType>`
     width: 152px;
     height: 36px;
+    padding: 8px 16px;
     border-radius: 40px;
-    font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -21,8 +21,7 @@ export const Button = styled.button<BtnPropsType>`
     `}
     
     ${props => props.btnType === 'inactiveSwitcher' && css<BtnPropsType>`
-        background-color: rgba(97, 218, 251, 0);
-        color: ${theme.colors.Neutral60};
+         color: ${theme.colors.Neutral60};
     `}
     
     ${props => props.btnType === 'addNote' && css<BtnPropsType>`

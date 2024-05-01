@@ -1,15 +1,14 @@
 import styled from "styled-components";
+import {theme} from "../../../styles/Theme";
 
 const SwitcherContainer = styled.div`
-    max-width: 312px;
-    max-height: 44px;
-    background-color: rgba(248, 249, 253, 1);
+    
+    background-color:${ theme.colors.Neutral20};
     border-radius: 80px;
-    margin-bottom: 24px;
-    margin-left: 24px;
+   margin:16px 24px 24px 24px;
     padding: 4px;
-    
-    
+  
+
 `
 
 

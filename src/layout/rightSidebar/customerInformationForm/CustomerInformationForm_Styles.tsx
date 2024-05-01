@@ -2,9 +2,7 @@ import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 
 const CustomerInformationForm = styled.div`
-    width: 100%;
-    max-height: 100%;
-    margin-bottom: 24px;
+    margin: 0 24px 24px 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid ${theme.colors.Neutral30};;
 `
@@ -27,7 +25,6 @@ const Field = styled.input`
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
-        font-family: Poppins, sans-serif;
         color: ${theme.colors.Neutral40};
     }
 `
