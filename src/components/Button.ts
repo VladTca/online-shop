@@ -18,13 +18,12 @@ export const Button = styled.button<BtnPropsType>`
         box-shadow: 0 3px 6px 0 rgba(20, 20, 20, 0.04);
         color: ${theme.colors.Neutral100};
     `}
-    
+
     ${props => props.btnType === 'inactiveSwitcher' && css<BtnPropsType>`
          color: ${theme.colors.Neutral60};
     `}
-    
+
     ${props => props.btnType === 'addNote' && css<BtnPropsType>`
-        
         width: 100%;
         font-weight: 600;
         font-size: 16px;
@@ -57,4 +56,3 @@ export const Button = styled.button<BtnPropsType>`
     `}
     
 `
-//dfgxcfgh
