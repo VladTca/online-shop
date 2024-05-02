@@ -20,6 +20,7 @@ const MainHeader = styled.div`
     position: fixed;
     border-bottom: 1px solid ${theme.colors.Neutral30};
     margin: 76px 360px 0 125px;
+    background-color: ${theme.colors.Neutral10};
 
 `;
 
@@ -56,19 +57,19 @@ const SearchMenuStyles= styled.nav`
     }
 `;
 
-const SearchInputBlok = styled.div`
+const SearchInputBlock = styled.div`
     padding: 22px 24px;
     display: flex;
     align-items: center;
     gap:10px;
     border-right: 1px solid ${theme.colors.Neutral30};
     width:50%;
-margin-right: 24px;
+    margin-right: 24px;
 `;
 
 const SearchInputField = styled.input`
 
-width: 100%;
+    width: 100%;
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
@@ -77,13 +78,8 @@ width: 100%;
       color: ${theme.colors.Neutral40};
     }
     border:none;
-  
     
-
 `;
-
-
-
 
 const SearchMenu = styled(Link)`
     color: ${theme.colors.Neutral100};
@@ -110,12 +106,22 @@ const SearchMenu = styled(Link)`
 }
 `;
 
+const GridContainer = styled.div`
+    margin: 180px 359px 0 125px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    gap: 16px;
+`
+
 export const S = {
     Main,
     SearchMenu,
     SearchMenuStyles,
     MainHeader,
-    SearchInputBlok,
+    SearchInputBlock,
     SearchInputField,
-    Dashboard
+    Dashboard,
+    GridContainer
 }

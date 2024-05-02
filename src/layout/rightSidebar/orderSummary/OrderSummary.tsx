@@ -8,14 +8,14 @@ export const OrderSummary: React.FC = () => {
 
 
                 <S.SubSummaryBlock>
-                    <div>Subtotal <span>$ 50.00</span></div>
-                    <div>Tax (10%) <span>$ 12.13</span></div>
+                    <div>Subtotal <span>$ 62.13</span></div>
+                    <div>Tax (10%) <span>$ 1.87</span></div>
                 </S.SubSummaryBlock>
                 <S.Total>
-                    Total <span>$ 62.13</span>
+                    Total <span>$ 64.00</span>
                 </S.Total>
 
-            <Button btnType={'PayNow'}>Pay Now</Button>
+            <Button btnType={'payNow'}>Pay Now</Button>
 
         </S.OrderSummary>
     );

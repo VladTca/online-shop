@@ -2,7 +2,7 @@ import styled, {css} from "styled-components";
 import {theme} from "../styles/Theme";
 
 type BtnPropsType = {
-    btnType?: 'activeSwitcher' | 'inactiveSwitcher' | 'addNote' | 'PayNow'
+    btnType?: 'activeSwitcher' | 'inactiveSwitcher' | 'addNote' | 'payNow'
 }
 
 export const Button = styled.button<BtnPropsType>`
@@ -18,20 +18,19 @@ export const Button = styled.button<BtnPropsType>`
         box-shadow: 0 3px 6px 0 rgba(20, 20, 20, 0.04);
         color: ${theme.colors.Neutral100};
     `}
-    
+
     ${props => props.btnType === 'inactiveSwitcher' && css<BtnPropsType>`
          color: ${theme.colors.Neutral60};
     `}
-    
+
     ${props => props.btnType === 'addNote' && css<BtnPropsType>`
-        
         width: 100%;
         font-weight: 600;
         font-size: 16px;
         line-height: 150%;
         background-color:${ theme.colors.Neutral20};
         color: ${theme.colors.Neutral60};
-        border-radius: 50px;
+        border-radius: 58px;
         padding: 12px 24px;
         
         &:hover {
@@ -39,14 +38,14 @@ export const Button = styled.button<BtnPropsType>`
             color: ${theme.colors.Primary60};
         }
     `}
-    ${props => props.btnType === 'PayNow' && css<BtnPropsType>`
+    ${props => props.btnType === 'payNow' && css<BtnPropsType>`
         width: 100%;
         font-weight: 600;
         font-size: 16px;
         line-height: 150%;
         background-color:${ theme.colors.Neutral20};
         color: ${theme.colors.Neutral60};
-        border-radius: 50px;
+        border-radius: 58px;
         padding: 12px;
       
 
