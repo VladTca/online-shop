@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
         color: ${theme.colors.primaryFont};
         line-height: 1.4;
         min-width: 360px;
-     
+ 
     }
 
     a {

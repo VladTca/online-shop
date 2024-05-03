@@ -4,6 +4,7 @@ import {S} from "./Header_Styles";
 import {Logo} from "../../components/logo/Logo";
 import {Icon} from "../../components/icon/Icon";
 import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";
+import {Link} from "react-router-dom";
 
 
 export const Header: React.FC = () => {
@@ -14,9 +15,9 @@ export const Header: React.FC = () => {
 
 
                     <FlexWrapper>
-                        <S.BackWrapper>
-                        <Icon iconId={"arrow-left"} width={'20'} height={'20'} viewBox={"0 0 20 20"}/>
-                        </S.BackWrapper>
+                        <Link to="/online-shop"><S.BackWrapper>
+                            <Icon iconId={"arrow-left"} width={'20'} height={'20'} viewBox={"0 0 20 20"}/>
+                        </S.BackWrapper></Link>
 
                         <S.LogoStyles>
                             <Logo/>
