@@ -76,7 +76,7 @@
         "babel-plugin-styled-components","styled-components",
         {
           "namespace": "online-shop",
-          "displayName": false,
+          "displayName": true,
           "fileName": false,
           "ssr": true,
           "meaninglessFileNames": []
