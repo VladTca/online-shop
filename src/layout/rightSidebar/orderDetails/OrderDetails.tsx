@@ -5,8 +5,8 @@ import mieKuahPedas from '../../../assets/images/Mie-kuah-pedas.png';
 import ayamKentang from '../../../assets/images/Ayam-kentang.png';
 import steakSapiBakar from '../../../assets/images/Steak-sapi-bakar.png';
 import {SectionTitle} from "../../../components/SectionTitle";
-import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import ikansantan from '../../../assets/images/Ikan-santan.png';
 
 const orders = [
     {
@@ -24,14 +24,20 @@ const orders = [
         name: 'Mie kuah pedas',
         price: '$ 11.21',
     },
+    {
+        photo: ikansantan,
+        name: 'Ikan santan',
+        price: '$ 10.40',
+    },
+
 ]
 
 export const OrderDetails: React.FC = () => {
     return (
-        <S.Orders>
+        <S.OrderDetailsBlock>
 
                 <SectionTitle>Order details</SectionTitle>
-                <FlexWrapper direction={'column'}>
+                <S.Orders>
 
                     {orders.map((o, i) => {
                         return <Order photo={o.photo}
@@ -40,9 +46,9 @@ export const OrderDetails: React.FC = () => {
                                       key={i}/>
                     })}
 
-                </FlexWrapper>
+                </S.Orders>
 
-        </S.Orders>
+        </S.OrderDetailsBlock>
     );
 };
 

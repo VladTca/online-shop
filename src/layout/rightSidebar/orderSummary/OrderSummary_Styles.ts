@@ -41,7 +41,7 @@ const SubSummaryPriceBlock = styled.div`
 
 `
 const Total = styled.div`
-margin-bottom: 24px;
+    margin-bottom: 24px;
     font-size: 16px;
     font-weight: 400;
     color: ${theme.colors.Neutral60};

@@ -31,7 +31,7 @@ const Photo = styled.img`
 const InfoBlock = styled.div`
     display: flex;
     flex-direction: column;
-   gap: 8px;
+    gap: 8px;
     width: 100%;
     
 `
