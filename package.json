@@ -69,16 +69,16 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app","preset-typescript"
     ],
     "plugins": [
       [
-        "babel-plugin-styled-components",
+        "babel-plugin-styled-components","styled-components",
         {
-          "namespace": "",
-          "displayName": true,
-          "fileName": true,
-          "ssr": false,
+          "namespace": "online-shop",
+          "displayName": false,
+          "fileName": false,
+          "ssr": true,
           "meaninglessFileNames": []
         }
       ]
