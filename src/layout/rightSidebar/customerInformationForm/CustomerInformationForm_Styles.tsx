@@ -41,6 +41,7 @@ const FieldContainer = styled.div`
         right: 16px;
         transform: translateY(-50%);
         cursor: pointer;
+        
         &:hover {
          transform: translateY(-50%) scale(1.5);
         

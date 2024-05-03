@@ -3,11 +3,11 @@ import {theme} from "../../styles/Theme";
 
 const DateSStyles = styled.div`
     margin: 0 16px;
- display: flex;
+    display: flex;
     border-radius: 40px;
     background: ${theme.colors.Neutral20};
     padding: 8px 20px;
- justify-content: center;
+    justify-content: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
