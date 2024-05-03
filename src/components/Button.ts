@@ -2,7 +2,7 @@ import styled, {css} from "styled-components";
 import {theme} from "../styles/Theme";
 
 type BtnPropsType = {
-    btnType?: 'activeSwitcher' | 'inactiveSwitcher' | 'addNote' | 'payNow'
+    btnType?: 'activeSwitcher' | 'inactiveSwitcher' | 'addNote' | 'payNow' | 'runningOrder'
 }
 
 export const Button = styled.button<BtnPropsType>`
@@ -52,6 +52,26 @@ export const Button = styled.button<BtnPropsType>`
         &:hover {
             background-color: ${theme.colors.Primary60};
             color: ${theme.colors.Neutral10};
+        }
+    `}
+
+
+    ${props => props.btnType === 'runningOrder' && css<BtnPropsType>`
+        width: 100%;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        background-color: ${theme.colors.Primary60};
+        color: ${theme.colors.Neutral10};
+        border-radius: 58px;
+        padding: 12px;
+        
+
+        &:hover {
+            background-color: ${theme.colors.Primary60};
+            color: ${theme.colors.Neutral10};
+            transform: scale(1.2);
+            cursor: pointer;
         }
     `}
     

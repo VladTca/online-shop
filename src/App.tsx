@@ -4,26 +4,29 @@ import { Header } from './layout/header/Header';
 import { LeftSidebar } from './layout/leftsidebar/LeftSidebar';
 import {RightSidebar} from "./layout/rightSidebar/RightSidebar";
 import {Main} from "./layout/main/Main";
-import {BrowserRouter, Routes, Route,Link} from "react-router-dom";
-import TableChoice from "./layout/tablechoice/TableChoice";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+
+import {LoginPage} from "./layout/loginpage/LoginPage";
+
 
 function App() {
   return (
 
       <BrowserRouter>
-
-          <Routes>
-                <Route path="/" element={<TableChoice/>}/>
-                <Route path="/tablechoice" element={<h1>Это вторая страница</h1>}/>
-
-
-              <div className="App">
-                  <Header/>
-                  <LeftSidebar/>
-                  <RightSidebar/>
-                  <Main/>
-              </div>
-          </Routes>
+          <div className='App-wrapper'>
+              <Routes>
+                  <Route path="/online-shop" element={<LoginPage/>}/>
+                  <Route path="/app" element={
+                      <div className="App">
+                          <Header/>
+                          <LeftSidebar/>
+                          <RightSidebar/>
+                          <Main/>
+                      </div>
+                  }/>
+                  {/*<Route path="/tablechoice" element={<TableChoice/>}/>*/}
+              </Routes>
+          </div>
       </BrowserRouter>
   );
 }

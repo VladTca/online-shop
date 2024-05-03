@@ -1,7 +1,8 @@
 import React from 'react';
 
-const TableChoice = () => {
-    return <h1>Это вторая страница</h1>;
+export const TableChoice = () => {
+    return (
+        <button><h1>Это вторая страница</h1></button>
+)
 };
 
-export default TableChoice;
