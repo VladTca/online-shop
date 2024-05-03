@@ -44,7 +44,6 @@ const Dashboard = styled.div`
 
 const SearchMenuStyles= styled.nav`
     display: flex;
-
     align-items: center;
     width: 100%;
 
@@ -52,8 +51,13 @@ const SearchMenuStyles= styled.nav`
     ul {
         display: flex;
         gap: 8px;
-        
+        align-items: center;
+        justify-content: center;
         padding-right: 24px;
+        font-size: 14px;
+letter-spacing: -0.3px;
+        font-weight: 400;
+        line-height: 140%;
     }
 `;
 
