@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
-import {Link} from "react-scroll";
-
+import {NavLink as RouterNavLink} from "react-router-dom";
 
 
 
@@ -10,7 +9,7 @@ const MenuItem = styled.li`
 `;
 
 
-const NavLink = styled(Link)`
+const NavLink = styled(RouterNavLink)`
     color: ${theme.colors.Neutral60};
    
     font-size: 16px;
@@ -23,6 +22,13 @@ const NavLink = styled(Link)`
     align-items: center;
     cursor: pointer;
      
+    &.active {
+        color: ${theme.colors.Primary60};
+        svg {
+            fill: ${theme.colors.Primary60};
+            stroke: ${theme.colors.Neutral10};
+        }
+    }
     
     &:hover {
         color: ${theme.colors.Primary60};

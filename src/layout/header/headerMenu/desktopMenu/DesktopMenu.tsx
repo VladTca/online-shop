@@ -11,7 +11,7 @@ import {FlexWrapper} from "../../../../components/FlexWrapper";
 const HeaderMenuItems = [
     {
         title: "Home",
-        href: "home",
+        href: "/app",
         svg: "home",
     },
     {

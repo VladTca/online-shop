@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link} from "react-scroll";
+import {NavLink as RouterNavLink} from "react-router-dom";
 import {theme} from "../../styles/Theme";
 
 const Main = styled.main`
@@ -85,7 +85,7 @@ const SearchInputField = styled.input`
     
 `;
 
-const SearchMenu = styled(Link)`
+const SearchMenu = styled(RouterNavLink)`
     color: ${theme.colors.Neutral100};
     border: 1px solid ${theme.colors.Neutral30};
     border-radius: 40px;
