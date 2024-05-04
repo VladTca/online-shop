@@ -10,8 +10,8 @@ const ScreenSaverStyles = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1024px;
-    width: 1440px;
+    height: 100vh;
+    width: 100vw;
     position: relative;
     z-index: 0;
     overflow: hidden;
@@ -19,12 +19,12 @@ const ScreenSaverStyles = styled.div`
     color: #fff;
     font-weight: 275;
     line-height: 100%;
- 
+ //margin: 0 auto;
 
 `
 
 
-const StyledDateDisplay = styled.div`
+const StyledTimeDisplay = styled.div`
     margin: 0 auto;
 `
 
@@ -99,5 +99,5 @@ export const S = {
     SubTitle,
     Downwrapper,
     LoginWrapper,
-    StyledDateDisplay
+    StyledTimeDisplay
 }

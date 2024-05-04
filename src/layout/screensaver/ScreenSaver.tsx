@@ -47,12 +47,12 @@ const TimeDisplay = () => {
     }, [showColon]);
 
     return (
-        <S.StyledDateDisplay>
+        <S.StyledTimeDisplay>
             {time.hours}
             <span style={{ opacity: showColon ? 1 : 0 }}>:</span>
             {time.minutes}
             <S.AMPM>{` ${amPm}`}</S.AMPM>
-        </S.StyledDateDisplay>
+        </S.StyledTimeDisplay>
     );
 };
 

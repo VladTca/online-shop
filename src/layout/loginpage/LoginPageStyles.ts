@@ -14,7 +14,7 @@ const LoginPageStyles = styled.div`
     width: 100vw;
     position: relative;
     z-index: 0;
-    overflow: hidden;
+    overflow-y: scroll;
 
 `
 
@@ -23,10 +23,10 @@ const Form = styled.form`
     position: absolute;
     top: 64px;
     left: 64px;
-    //bottom: 64px;
+    
     display: flex;
-    width: 619px;
-    height: 896px;
+    max-width: 619px;
+ 
     padding: 54px 90px 72px 90px;
     flex-direction: column;
     justify-content: space-between;
@@ -106,7 +106,7 @@ const FieldContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: auto 0;
+    margin: 135px 0;
     
 `;
 
