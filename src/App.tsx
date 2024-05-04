@@ -24,14 +24,15 @@ function App() {
 
         setTimer(setTimeout(() => {
             setInteractionDetected(false);
-        }, 60000));
+        }, 120000));
     };
 
     useEffect(() => {
         const handleInteraction = () => {
+
+            if(!interactionDetected) {
             setInteractionDetected(true);
             resetInteraction();
-            if(!interactionDetected) {
                 navigate('/online-shop');
             }
         };
