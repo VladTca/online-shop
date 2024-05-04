@@ -46,43 +46,38 @@ function App() {
     }, [interactionDetected]);
 
     return (
-        <div className="App">
-            // <Header showCustomer={false}/>
-            // <LeftSidebar/>
-            // <RightSidebar/>
-            // <Main/>
-            // </div>
-        // <div className="app-container">
-        //     <div className="app-content">
-        //         <SwitchTransition>
-        //             <CSSTransition
-        //                 key={interactionDetected ? "App" : "ScreenSaver"}
-        //                 addEndListener={(node, done) => {
-        //                     node.addEventListener("transitionend", done, false);
-        //                 }}
-        //                 classNames="fade"
-        //             >
-        //                 {interactionDetected ? (
-        //                     <div className='App-wrapper'>
-        //                         <Routes>
-        //                             <Route path="/online-shop" element={<LoginPage/>}/>
-        //                             <Route path="/app" element={
-        //                                 <div className="App">
-        //                                     <Header showCustomer={false}/>
-        //                                     <LeftSidebar/>
-        //                                     <RightSidebar/>
-        //                                     <Main/>
-        //                                 </div>
-        //                             }/>
-        //                             <Route path="/tablechoice" element={<TableChoice/>}/>
-        //                         </Routes>
-        //                     </div>
-        //
-        //                 ) : <ScreenSaver/>}
-        //             </CSSTransition>
-        //         </SwitchTransition>
-        //     </div>
-        // </div>
+
+        <div className="app-container">
+            <div className="app-content">
+                <SwitchTransition>
+                    <CSSTransition
+                        key={interactionDetected ? "App" : "ScreenSaver"}
+                        addEndListener={(node, done) => {
+                            node.addEventListener("transitionend", done, false);
+                        }}
+                        classNames="fade"
+                    >
+                        {interactionDetected ? (
+                            <div className='App-wrapper'>
+                                <Routes>
+                                    <Route path="/online-shop" element={<LoginPage/>}/>
+                                    <Route path="/app" element={
+                                        <div className="App">
+                                            <Header showCustomer={false}/>
+                                            <LeftSidebar/>
+                                            <RightSidebar/>
+                                            <Main/>
+                                        </div>
+                                    }/>
+                                    <Route path="/tablechoice" element={<TableChoice/>}/>
+                                </Routes>
+                            </div>
+
+                        ) : <ScreenSaver/>}
+                    </CSSTransition>
+                </SwitchTransition>
+            </div>
+        </div>
     );
 }
 
