@@ -10,8 +10,8 @@ const ScreenSaverStyles = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 1024px;
+    width: 1440px;
     position: relative;
     z-index: 0;
     overflow: hidden;
@@ -19,7 +19,7 @@ const ScreenSaverStyles = styled.div`
     color: #fff;
     font-weight: 275;
     line-height: 100%;
-    
+ 
 
 `
 

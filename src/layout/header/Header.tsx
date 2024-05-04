@@ -10,13 +10,14 @@ import 'tippy.js/dist/tippy.css';
 import '../../styles/tippyThemes.css';
 
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+    showCustomer?: boolean;
+}
+
+export const Header: React.FC<HeaderProps> = ({ showCustomer = true }) => {
     return (
         <S.Header>
-
             <FlexWrapper justify={"space-between"} align={"center"}>
-
-
                 <FlexWrapper>
                     <Tippy content='Exit' theme='myTheme' delay={[500, 250]} animation="perspective" placement="bottom-start">
                         <Link to="/online-shop">
@@ -37,10 +38,8 @@ export const Header: React.FC = () => {
                     </FlexWrapper>
                 </FlexWrapper>
 
-                <DesktopMenu/>
+                <DesktopMenu showCustomer={showCustomer}/>
             </FlexWrapper>
-
         </S.Header>
     );
 };
-
