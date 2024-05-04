@@ -46,7 +46,12 @@ function App() {
     }, [interactionDetected]);
 
     return (
-        <LoginPage/>
+        <div className="App">
+            // <Header showCustomer={false}/>
+            // <LeftSidebar/>
+            // <RightSidebar/>
+            // <Main/>
+            // </div>
         // <div className="app-container">
         //     <div className="app-content">
         //         <SwitchTransition>

@@ -9,21 +9,14 @@ const LoginPageStyles = styled.div`
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    position: relative;
-    z-index: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
 
 `
 
 const Form = styled.form`
     border: 1px solid black;
-    position: absolute;
-    top: 64px;
-    left: 64px;
-    
     display: flex;
     max-width: 619px;
  
@@ -31,10 +24,10 @@ const Form = styled.form`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
     border-radius: 16px;
     background-color: ${theme.colors.Neutral10};
     box-shadow: 0 24px 64px -16px ${theme.colors.Neutral100});
+    margin: 64px auto 64px 64px;
 
 `
 

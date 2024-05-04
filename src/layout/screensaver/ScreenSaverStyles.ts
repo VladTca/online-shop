@@ -12,9 +12,8 @@ const ScreenSaverStyles = styled.div`
     align-items: center;
     height: 100vh;
     width: 100vw;
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
+    
+    overflow-Y: auto ;
     font-size: 160px;
     color: #fff;
     font-weight: 275;
@@ -25,7 +24,7 @@ const ScreenSaverStyles = styled.div`
 
 
 const StyledTimeDisplay = styled.div`
-    margin: 0 auto;
+    margin:412px auto 0;
 `
 
 const AMPM = styled.span`
@@ -75,11 +74,11 @@ const SubTitle = styled.p`
 `
 
 const Downwrapper = styled.div`
-position: absolute;
-bottom: 64px;
+
     display: flex;
     align-items: center;
     gap: 24px;
+    margin: 268px auto 64px;
     
 `
 const LoginWrapper = styled.div`
