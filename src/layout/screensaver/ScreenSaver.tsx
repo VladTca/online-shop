@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {S} from "./ScreenSaverStyles";
 import avatarka from "../../assets/images/Profilepict.png";
-import {FlexWrapper} from "../../components/FlexWrapper";
+
 import {ImageWrapper} from "../../components/ImageWrapper";
 
 

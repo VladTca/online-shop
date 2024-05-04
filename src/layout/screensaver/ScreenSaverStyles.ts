@@ -23,6 +23,7 @@ const ScreenSaverStyles = styled.div`
 
 `
 
+
 const StyledDateDisplay = styled.div`
     margin: 0 auto;
 `
