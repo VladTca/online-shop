@@ -11,7 +11,7 @@ const LoginPageStyles = styled.div`
     justify-content: center;
     height: 100%;
     width: 100vw;
-    overflow-y: auto;
+    overflow-y:auto;
 
 `
 
@@ -19,7 +19,7 @@ const Form = styled.form`
     border: 1px solid black;
     display: flex;
     max-width: 619px;
- 
+    height: 100%;
     padding: 54px 90px 72px 90px;
     flex-direction: column;
     justify-content: space-between;
@@ -37,7 +37,7 @@ const MainTitle = styled.h1`
     font-size: 28px;
     font-weight: 600;
     line-height: 150%;
-    margin-top: 32px;
+ 
     margin-bottom: 16px;
 `
 
