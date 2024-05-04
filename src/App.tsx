@@ -47,8 +47,7 @@ function App() {
 
     return (
 
-        <div className="app-container">
-            <div className="app-content">
+
                 <SwitchTransition>
                     <CSSTransition
                         key={interactionDetected ? "App" : "ScreenSaver"}
@@ -76,8 +75,7 @@ function App() {
                         ) : <ScreenSaver/>}
                     </CSSTransition>
                 </SwitchTransition>
-            </div>
-        </div>
+
     );
 }
 
