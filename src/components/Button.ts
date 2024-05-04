@@ -28,34 +28,25 @@ export const Button = styled.button<BtnPropsType>`
         font-weight: 600;
         font-size: 16px;
         line-height: 150%;
-        background-color:${ theme.colors.Neutral20};
-        color: ${theme.colors.Neutral60};
+        background-color: ${theme.colors.Primary10};
+        color: ${theme.colors.Primary60};
         border-radius: 58px;
         padding: 12px 24px;
         
-        &:hover {
-            background-color: ${theme.colors.Primary10};
-            color: ${theme.colors.Primary60};
-        }
     `}
+    
     ${props => props.btnType === 'payNow' && css<BtnPropsType>`
         width: 100%;
         font-weight: 600;
         font-size: 16px;
         line-height: 150%;
-        background-color:${ theme.colors.Neutral20};
-        color: ${theme.colors.Neutral60};
+        background-color: ${theme.colors.Primary60};
+        color: ${theme.colors.Neutral10};
         border-radius: 58px;
         padding: 12px;
-      
-
-        &:hover {
-            background-color: ${theme.colors.Primary60};
-            color: ${theme.colors.Neutral10};
-        }
+        
     `}
-
-
+    
     ${props => props.btnType === 'runningOrder' && css<BtnPropsType>`
         width: 100%;
         font-weight: 600;
@@ -66,7 +57,6 @@ export const Button = styled.button<BtnPropsType>`
         border-radius: 58px;
         padding: 12px;
         
-
         &:hover {
             background-color: ${theme.colors.Primary60};
             color: ${theme.colors.Neutral10};

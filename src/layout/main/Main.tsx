@@ -15,6 +15,11 @@ import nasigoreng from "../../assets/images/Nasi-goreng-putih.png";
 import nasisteak from "../../assets/images/Nasi-steak-ayam.png";
 import steakikan from '../../assets/images/Steak-ikan-santan.png';
 import {MainMenuItem} from "./mainMenuItem/MainMenuItem";
+import ahipoke from '../../assets/images/ahi-poke.webp';
+import crudo from '../../assets/images/crudo.webp';
+import okonomake from '../../assets/images/okonomake.webp';
+import viwisuaz from '../../assets/images/viwisuaz.webp';
+
 
 
 
@@ -111,7 +116,27 @@ const MainMenuItems = [
     {
         photo: cumicumi,
         name: 'Cumi-cumi',
-        price: '$ 25.12',
+        price: '$ 17.93',
+    },
+    {
+        photo: ahipoke,
+        name: 'Ahipoke',
+        price: '$ 22.08',
+    },
+    {
+        photo: crudo,
+        name: 'Crudo',
+        price: '$ 19.47',
+    },
+    {
+        photo: okonomake,
+        name: 'Okonomake',
+        price: '$ 11.50',
+    },
+    {
+        photo: viwisuaz,
+        name: 'Viwisuaz',
+        price: '$ 9.99',
     },
 ]
 
