@@ -19,14 +19,21 @@ const Field = styled.input`
     border-radius: 58px;
     border: 1px solid ${theme.colors.Neutral30};
     padding:12px 16px;
-  
-    
-    &::placeholder {
+
+
+    &#reservTableField{
+        &:hover {
+            cursor: pointer;
+        }
+
+
+        &::placeholder {
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         color: ${theme.colors.Neutral40};
     }
+   
     
 `
 
@@ -34,6 +41,9 @@ const FieldContainer = styled.div`
     position: relative;
     width: 100%;
     margin: 12px 0 16px 0;
+    
+    
+    
     
     svg {
         position: absolute;
