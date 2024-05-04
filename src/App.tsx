@@ -5,6 +5,7 @@ import { LeftSidebar } from './layout/leftsidebar/LeftSidebar';
 import {RightSidebar} from "./layout/rightSidebar/RightSidebar";
 import {Main} from "./layout/main/Main";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
 
 import {LoginPage} from "./layout/loginpage/LoginPage";
 import {ScreenSaver} from "./layout/screensaver/ScreenSaver";
@@ -40,26 +41,36 @@ function App() {
         };
     }, []);
 
-
-      return interactionDetected ? (
-
-      <BrowserRouter>
-          <div className='App-wrapper'>
-              <Routes>
-                  <Route path="/online-shop" element={<LoginPage/>}/>
-                  <Route path="/app" element={
-                      <div className="App">
-                          <Header/>
-                          <LeftSidebar/>
-                          <RightSidebar/>
-                          <Main/>
-                      </div>
-                  }/>
-                  <Route path="/tablechoice" element={<TableChoice/>}/>
-              </Routes>
-          </div>
-      </BrowserRouter>
-  ) : <ScreenSaver/>;
+    return (
+        <SwitchTransition>
+            <CSSTransition
+                key={interactionDetected ? "App" : "ScreenSaver"}
+                addEndListener={(node, done) => {
+                    node.addEventListener("transitionend", done, false);
+                }}
+                classNames="fade"
+            >
+                {interactionDetected ? (
+                    <BrowserRouter>
+                        <div className='App-wrapper'>
+                            <Routes>
+                                <Route path="/online-shop" element={<LoginPage/>}/>
+                                <Route path="/app" element={
+                                    <div className="App">
+                                        <Header/>
+                                        <LeftSidebar/>
+                                        <RightSidebar/>
+                                        <Main/>
+                                    </div>
+                                }/>
+                                <Route path="/tablechoice" element={<TableChoice/>}/>
+                            </Routes>
+                        </div>
+                    </BrowserRouter>
+                ) : <ScreenSaver/>}
+            </CSSTransition>
+        </SwitchTransition>
+    );
 }
 
 export default App;
