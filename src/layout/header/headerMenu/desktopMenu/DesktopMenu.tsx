@@ -11,7 +11,7 @@ import {FlexWrapper} from "../../../../components/FlexWrapper";
 const HeaderMenuItems = [
     {
         title: "Home",
-        href: "home",
+        href: "/app",
         svg: "home",
     },
     {
@@ -29,15 +29,27 @@ const HeaderMenuItems = [
         href: "bills",
         svg: "receipt",
     },
+    {
+        title: "Customer",
+        href: "customer",
+        svg: "user",
+    }
 
 ];
 
+interface DesktopMenuProps {
+    showCustomer?: boolean;
+}
 
-export const DesktopMenu: React.FC = () => {
+export const DesktopMenu: React.FC<DesktopMenuProps> = ({ showCustomer = true }) => {
+    const items = showCustomer
+        ? HeaderMenuItems
+        : HeaderMenuItems.slice(0, -1);
+
     return (
         <S.DesktopMenu>
             <Menu MenuStyledProps={S.NavLink}
-                  items={HeaderMenuItems}/>
+                  items={items}/>
             <FlexWrapper align={'center'}>
                 <SelectEatPlace/>
                 <DateStream/>

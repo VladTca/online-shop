@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "@tippyjs/react": "^4.2.6",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
@@ -25,6 +26,7 @@
     "react-router-dom": "^6.23.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
+    "react-transition-group": "^4.4.5",
     "styled-components": "^6.1.8",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
@@ -62,6 +64,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-react-display-name": "^7.24.1",
     "@babel/plugin-transform-typescript": "^7.24.5",
+    "@types/react-transition-group": "^4.4.10",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-styled-components": "^2.1.4",
     "babel-plugin-transform-react-jsx-source": "^6.22.0",
@@ -69,16 +72,18 @@
   },
   "babel": {
     "presets": [
-      "react-app"
+      "react-app",
+      "preset-typescript"
     ],
     "plugins": [
       [
         "babel-plugin-styled-components",
+        "styled-components",
         {
-          "namespace": "",
+          "namespace": "online-shop",
           "displayName": true,
-          "fileName": true,
-          "ssr": false,
+          "fileName": false,
+          "ssr": true,
           "meaninglessFileNames": []
         }
       ]

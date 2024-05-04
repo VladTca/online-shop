@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
-import {Link} from "react-scroll";
+import {NavLink as RouterNavLink} from "react-router-dom";
 
 
 const LeftSidebar = styled.aside`
@@ -23,7 +23,7 @@ const MenuItem = styled.li`
 `;
 
 
-const NavBar = styled(Link)`
+const NavBar = styled(RouterNavLink)`
     color: ${theme.colors.Neutral60};
 padding: 12px 6px;
     font-size: 12px;

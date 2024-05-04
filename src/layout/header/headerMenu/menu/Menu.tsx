@@ -39,11 +39,8 @@ export const Menu: React.FC<MenuProps> = ({
                 return (
                     <S.MenuItem key={index}>
                         <MenuStyledProps
-                            activeClass="active"
-                            offset={-70}
-                            spy={true}
-                            smooth={true}
-                            to={item.href}
+                           to={item.href}
+                           activeClassName="active"
                         >
                             <FlexWrapper gap={'8px'} direction={PropForFlexWrapper1} align={PropForFlexWrapper2}
                                          justify={'center'}>

@@ -1,8 +1,9 @@
 import React from 'react';
+import {Header} from "../header/Header";
 
 export const TableChoice = () => {
     return (
-        <button><h1>Это вторая страница</h1></button>
+        <Header/>
 )
 };
 
