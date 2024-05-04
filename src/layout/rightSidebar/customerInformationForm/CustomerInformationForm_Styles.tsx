@@ -27,13 +27,13 @@ const Field = styled.input`
         }
 
 
-        &::placeholder {
+       
+    }
+    &::placeholder {
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         color: ${theme.colors.Neutral40};
-    }
-   
     
 `
 

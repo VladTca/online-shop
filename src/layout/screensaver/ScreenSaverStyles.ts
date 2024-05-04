@@ -13,18 +13,25 @@ const ScreenSaverStyles = styled.div`
     height: 100vh;
     width: 100vw;
     
-    overflow-Y: auto ;
+    //overflow-Y: auto ;
     font-size: 160px;
     color: #fff;
     font-weight: 275;
     line-height: 100%;
- //margin: 0 auto;
+
 
 `
-
+const StyledTimerCenter = styled.div`
+    margin: auto auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+`
 
 const StyledTimeDisplay = styled.div`
-    margin:412px auto 0;
+    margin:auto auto 0 auto;
 `
 
 const AMPM = styled.span`
@@ -35,7 +42,7 @@ const AMPM = styled.span`
 `
 
 const StyledDate = styled.div`
-    margin: 4px auto 0 auto;
+    margin: 4px auto auto auto;
     
     font-size: 24px;
     font-weight: 400;
@@ -78,7 +85,7 @@ const Downwrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 24px;
-    margin: 268px auto 64px;
+ margin: auto auto 64px auto;
     
 `
 const LoginWrapper = styled.div`
@@ -98,5 +105,6 @@ export const S = {
     SubTitle,
     Downwrapper,
     LoginWrapper,
-    StyledTimeDisplay
+    StyledTimeDisplay,
+    StyledTimerCenter
 }

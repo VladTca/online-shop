@@ -90,8 +90,10 @@ const DateDisplay = () => {
 export const ScreenSaver = () => {
     return (
         <S.ScreenSaverStyles>
-            <TimeDisplay/>
-            <DateDisplay/>
+            <S.StyledTimerCenter>
+                <TimeDisplay/>
+                <DateDisplay/>
+            </S.StyledTimerCenter>
             <S.Downwrapper>
                 <ImageWrapper>
                     <S.Photo src={avatarka} alt={"avatarka"}/>
