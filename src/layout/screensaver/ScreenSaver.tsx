@@ -100,7 +100,7 @@ export const ScreenSaver = () => {
                 </ImageWrapper>
                 <S.LoginWrapper>
                     <S.MainTitle>Coca Coffeetalk</S.MainTitle>
-                    <S.SubTitle>Logged in as,<span>Bean Kean</span></S.SubTitle>
+                    <S.SubTitle>Logged in as, <span>Bean Kean</span></S.SubTitle>
                 </S.LoginWrapper>
 
             </S.Downwrapper>

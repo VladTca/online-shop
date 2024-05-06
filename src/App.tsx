@@ -10,12 +10,15 @@ import { CSSTransition, SwitchTransition } from 'react-transition-group';
 import {LoginPage} from "./layout/loginpage/LoginPage";
 import {ScreenSaver} from "./layout/screensaver/ScreenSaver";
 import {TableChoice} from "./layout/tablechoice/TableChoice";
+import {Modal} from "./components/modal/Modal";
 
 
 function App() {
     const [interactionDetected, setInteractionDetected] = useState(false);
     const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
     const navigate = useNavigate();
+
+    const [modalActive, setModalActive] = useState(true);
 
     const resetInteraction = () => {
         if (timer) {
@@ -67,6 +70,7 @@ function App() {
                                             <LeftSidebar/>
                                             <RightSidebar/>
                                             <Main/>
+                                            <Modal active={modalActive} setActive={setModalActive}/>
                                         </div>
                                     }/>
                                     <Route path="/tablechoice" element={<TableChoice/>}/>
