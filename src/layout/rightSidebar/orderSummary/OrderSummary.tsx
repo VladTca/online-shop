@@ -1,11 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {S} from './OrderSummary_Styles'
 import {Button} from "../../../components/Button";
+import {Modal} from "../../../components/modal/Modal";
 
-export const OrderSummary: React.FC = () => {
+
+interface  IProps {
+    onClcik: () => void
+}
+
+export const OrderSummary: React.FC<IProps> = ({ onClcik}) => {
+    // const [modalActive, setModalActive] = useState(false);
     return (
         <S.OrderSummary>
-
 
                 <S.SubSummaryBlock>
                     <div>Subtotal <span>$ 62.13</span></div>
@@ -15,7 +21,9 @@ export const OrderSummary: React.FC = () => {
                     Total <span>$ 64.00</span>
                 </S.Total>
 
-            <Button btnType={'payNow'}>Pay Now</Button>
+            {/*<Button onClick={() => setModalActive(true)} btnType={'payNow'}>Pay Now</Button>*/}
+            <Button onClick={onClcik} btnType={'payNow'}>Pay Now</Button>
+            {/*<Modal active={modalActive} setActive={setModalActive}/>*/}
 
         </S.OrderSummary>
     );

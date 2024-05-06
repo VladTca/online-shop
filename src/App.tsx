@@ -13,12 +13,12 @@ import {TableChoice} from "./layout/tablechoice/TableChoice";
 import {Modal} from "./components/modal/Modal";
 
 
-function App() {
+export function App() {
     const [interactionDetected, setInteractionDetected] = useState(false);
     const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
     const navigate = useNavigate();
 
-    const [modalActive, setModalActive] = useState(true);
+    const [modalActive, setModalActive] = useState(false);
 
     const resetInteraction = () => {
         if (timer) {
@@ -27,7 +27,7 @@ function App() {
 
         setTimer(setTimeout(() => {
             setInteractionDetected(false);
-        }, 120000));
+        }, 12000000));
     };
 
     useEffect(() => {
@@ -68,7 +68,7 @@ function App() {
                                         <div className="App">
                                             <Header showCustomer={false}/>
                                             <LeftSidebar/>
-                                            <RightSidebar/>
+                                            <RightSidebar onClcik={() => setModalActive(true)}/>
                                             <Main/>
                                             <Modal active={modalActive} setActive={setModalActive}/>
                                         </div>
