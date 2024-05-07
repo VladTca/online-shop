@@ -82,8 +82,8 @@
         {
           "namespace": "online-shop",
           "displayName": true,
-          "fileName": false,
-          "ssr": true,
+          "fileName": true,
+          "ssr": false,
           "meaninglessFileNames": []
         }
       ]

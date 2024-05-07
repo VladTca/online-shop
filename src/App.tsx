@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
-import { Header } from './layout/header/Header';
-import { LeftSidebar } from './layout/leftsidebar/LeftSidebar';
+import {Header} from './layout/header/Header';
+import {LeftSidebar} from './layout/leftsidebar/LeftSidebar';
 import {RightSidebar} from "./layout/rightSidebar/RightSidebar";
 import {Main} from "./layout/main/Main";
 import {useNavigate, Routes, Route} from "react-router-dom";
-import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import {CSSTransition, SwitchTransition} from 'react-transition-group';
 
 import {LoginPage} from "./layout/loginpage/LoginPage";
 import {ScreenSaver} from "./layout/screensaver/ScreenSaver";
@@ -33,9 +33,9 @@ export function App() {
     useEffect(() => {
         const handleInteraction = () => {
 
-            if(!interactionDetected) {
-            setInteractionDetected(true);
-            resetInteraction();
+            if (!interactionDetected) {
+                setInteractionDetected(true);
+                resetInteraction();
                 navigate('/online-shop');
             }
         };
@@ -52,34 +52,34 @@ export function App() {
     return (
 
 
-                <SwitchTransition>
-                    <CSSTransition
-                        key={interactionDetected ? "App" : "ScreenSaver"}
-                        addEndListener={(node, done) => {
-                            node.addEventListener("transitionend", done, false);
-                        }}
-                        classNames="fade"
-                    >
-                        {interactionDetected ? (
-                            <div className='App-wrapper'>
-                                <Routes>
-                                    <Route path="/online-shop" element={<LoginPage/>}/>
-                                    <Route path="/app" element={
-                                        <div className="App">
-                                            <Header showCustomer={false}/>
-                                            <LeftSidebar/>
-                                            <RightSidebar onClcik={() => setModalActive(true)}/>
-                                            <Main/>
-                                            <Modal active={modalActive} setActive={setModalActive}/>
-                                        </div>
-                                    }/>
-                                    <Route path="/tablechoice" element={<TableChoice/>}/>
-                                </Routes>
-                            </div>
+        <SwitchTransition>
+            <CSSTransition
+                key={interactionDetected ? "App" : "ScreenSaver"}
+                addEndListener={(node, done) => {
+                    node.addEventListener("transitionend", done, false);
+                }}
+                classNames="fade"
+            >
+                {interactionDetected ? (
+                    <div className='App-wrapper'>
+                        <Routes>
+                            <Route path="/online-shop" element={<LoginPage/>}/>
+                            <Route path="/app" element={
+                                <div className="App">
+                                    <Header showCustomer={false}/>
+                                    <LeftSidebar/>
+                                    <RightSidebar onClcik={() => setModalActive(true)}/>
+                                    <Main/>
+                                    <Modal active={modalActive} setActive={setModalActive}/>
+                                </div>
+                            }/>
+                            <Route path="/tablechoice" element={<TableChoice/>}/>
+                        </Routes>
+                    </div>
 
-                        ) : <ScreenSaver/>}
-                    </CSSTransition>
-                </SwitchTransition>
+                ) : <ScreenSaver/>}
+            </CSSTransition>
+        </SwitchTransition>
 
     );
 }
