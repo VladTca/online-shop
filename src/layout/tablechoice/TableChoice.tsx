@@ -84,6 +84,8 @@ const RezervMenuItems = [
     },
 ]
 
+
+
 export const TableChoice = () => {
     return (
         <S.TableChoiceStyle>

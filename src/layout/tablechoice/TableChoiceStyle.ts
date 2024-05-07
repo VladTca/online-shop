@@ -139,17 +139,18 @@ const SearchInputField = styled.input`
 const TableStyles = styled.div`
     margin-top: 200px;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "table1 table2 table3 table4 table5"
-    "table6 table7 table8 . ."
+    "table6 table6 table7 table7 table8 table8"
     "table9 table10 table11 table12 table13"
-     "table14 table15 table16 table17 table18";
-    grid-template-columns: auto auto auto auto auto;    
+    "table14 table15 table16 table17 table18";
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto auto auto auto;
     border: 1px solid transparent;
     row-gap: 44px;
     padding: 24px;
 `;
+
 
 
 export const S = {
@@ -164,6 +165,7 @@ export const S = {
     SearchInputBlock,
     SearchInputField,
     TableStyles,
-    UpWrapper
+    UpWrapper,
+
 }
 

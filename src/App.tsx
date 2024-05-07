@@ -13,7 +13,7 @@ import {TableChoice} from "./layout/tablechoice/TableChoice";
 import {Modal} from "./components/modal/Modal";
 
 
-export function App() {
+function App() {
     const [interactionDetected, setInteractionDetected] = useState(false);
     const [timer, setTimer] = useState<NodeJS.Timeout | null>(null);
     const navigate = useNavigate();
