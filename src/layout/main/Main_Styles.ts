@@ -55,7 +55,7 @@ const SearchMenuStyles= styled.nav`
         justify-content: center;
         padding-right: 24px;
         font-size: 14px;
-letter-spacing: -0.3px;
+        letter-spacing: -0.7px;
         font-weight: 400;
         line-height: 140%;
     }
@@ -91,7 +91,6 @@ const SearchMenu = styled(RouterNavLink)`
     border-radius: 40px;
     background: ${theme.colors.Neutral10};
     padding: 8px 16px;
-
 
     display: flex;
 
