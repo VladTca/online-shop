@@ -126,11 +126,30 @@ export const TableChoice = () => {
 
                 {tableImages.map((img, index) => {return (
 
-                        <img key={img.id} src={img.src} alt={`table ${img.id}`}/>
+                    <div id={'table' + img.id} className={'table'}><img key={img.id} src={img.src} alt={`table ${img.id}`}/></div>
 
                 )})}
 
-                {/*<img src={tableImage1} alt="table1"/>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+                {/*<div><img src={tableImage1} alt="table1"/></div>*/}
+
+
                 {/*<img src={tableImage2} alt="table2"/>*/}
                 {/*<img src={tableImage3} alt="table3"/>*/}
                 {/*<img src={tableImage4} alt="table4"/>*/}
@@ -148,7 +167,6 @@ export const TableChoice = () => {
                 {/*<img src={tableImage16} alt="table16"/>*/}
                 {/*<img src={tableImage17} alt="table17"/>*/}
                 {/*<img src={tableImage18} alt="table18"/>*/}
-
 
 
             </S.TableStyles>

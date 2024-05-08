@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import {theme} from "../../styles/Theme";
 import {NavLink as RouterNavLink} from "react-router-dom";
 
@@ -139,17 +139,99 @@ const SearchInputField = styled.input`
 const TableStyles = styled.div`
     margin-top: 200px;
     display: grid;
+    align-items: start;
+    justify-content: start;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-    "table1 table2 table3 table4 table5"
-    "table6 table6 table7 table7 table8 table8"
-    "table9 table10 table11 table12 table13"
-    "table14 table15 table16 table17 table18";
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto auto auto;
+    "table1 table1 table2 table2 table3 table3 table4 table4 table5 table5"
+    "table6 table6 table6 table7 table7 table7 table7 table8 table8 table8"
+    "table9 table9 table10 table10 table11 table11 table12 table12 table13 table13"
+    "table14 table14 table15 table15 table16 table16 table17 table17 table18 table18";
     border: 1px solid transparent;
     row-gap: 44px;
     padding: 24px;
+
+    & > div:first-child {
+        grid-area: table1;
+        
+    }
+
+    & > div:nth-child(2) {
+        grid-area: table2;
+
+    }
+
+    & > div:nth-child(3) {
+        grid-area: table3;
+    }
+
+    & > div:nth-child(4) {
+        grid-area: table4;
+
+    }
+
+    & > div:nth-child(5) {
+        grid-area: table5;
+    }
+
+    & > div:nth-child(6) {
+        grid-area: table6;
+    }
+
+    & > div:nth-child(7) {
+        grid-area: table7;
+    }
+
+    & > div:nth-child(8) {
+        grid-area: table8;
+
+    }
+
+    & > div:nth-child(9) {
+        grid-area: table9;
+    }
+
+    & > div:nth-child(10) {
+        grid-area: table10;
+    }
+
+    & > div:nth-child(11) {
+        grid-area: table11;
+        justify-content: left;
+        align-items: start;
+    }
+
+    & > div:nth-child(12) {
+        grid-area: table12;
+    }
+
+    & > div:nth-child(13) {
+        grid-area: table13;
+    }
+
+    & > div:nth-child(14) {
+        grid-area: table14;
+    }
+
+    & > div:nth-child(15) {
+        grid-area: table15;
+    }
+
+    & > div:nth-child(16) {
+        grid-area: table16;
+    }
+
+    & > div:nth-child(17) {
+        grid-area: table17;
+    }
+
+    & > div:last-child {
+        grid-area: table18;
+    }
+
 `;
+
 
 
 
