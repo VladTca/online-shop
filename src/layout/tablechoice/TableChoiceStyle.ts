@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import {theme} from "../../styles/Theme";
 import {NavLink as RouterNavLink} from "react-router-dom";
 
@@ -139,7 +139,7 @@ const SearchInputField = styled.input`
 const TableStyles = styled.div`
     margin-top: 200px;
     display: grid;
- 
+
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
     "table1 table1 table2 table2 table3 table3 table4 table4 table5 table5"
@@ -149,10 +149,15 @@ const TableStyles = styled.div`
     border: 1px solid transparent;
     row-gap: 44px;
     padding: 24px;
-div{display: grid; justify-content: center}
+
+    div {
+        display: grid;
+        justify-content: center
+    }
+
     & > div:first-child {
         grid-area: table1;
-        
+
     }
 
     & > div:nth-child(2) {
