@@ -137,14 +137,16 @@ const SearchInputField = styled.input`
     border:none;
 `
 const TableStyles = styled.div`
-    margin-top: 200px;
+    margin-top: 180px;
     display: grid;
-
+    margin-right: 125px;
+    ;
+    
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
-    "table1 table1 table2 table2 table3 table3 table4 table4 table5 table5"
-    "table6 table6 table6 table7 table7 table7 table7 table8 table8 table8"
-    "table9 table9 table10 table10 table11 table11 table12 table12 table13 table13"
+    "table1 table2 table2 table3 table3 table3 table4 table4 table5 table5"
+    "table6 table6 table6 table7 table7 table7 table8 table8 table8 table8"
+    "table9 table9 table10 table11 table11 table11 table12 table12 table13 table13"
     "table14 table14 table15 table15 table16 table16 table17 table17 table18 table18";
     border: 1px solid transparent;
     row-gap: 44px;
@@ -152,7 +154,7 @@ const TableStyles = styled.div`
 
     div {
         display: grid;
-        justify-content: center
+        justify-content: start;
     }
 
     & > div:first-child {
@@ -162,20 +164,24 @@ const TableStyles = styled.div`
 
     & > div:nth-child(2) {
         grid-area: table2;
-
+        justify-content: center;
     }
 
     & > div:nth-child(3) {
         grid-area: table3;
+
+        justify-content: center;
     }
 
     & > div:nth-child(4) {
         grid-area: table4;
+        justify-content: center;
 
     }
 
     & > div:nth-child(5) {
         grid-area: table5;
+        justify-content: center;
     }
 
     & > div:nth-child(6) {
@@ -184,10 +190,12 @@ const TableStyles = styled.div`
 
     & > div:nth-child(7) {
         grid-area: table7;
+        justify-content: center;
     }
 
     & > div:nth-child(8) {
         grid-area: table8;
+        justify-content: center;
 
     }
 
@@ -197,16 +205,18 @@ const TableStyles = styled.div`
 
     & > div:nth-child(10) {
         grid-area: table10;
+            justify-content: start;
     }
 
     & > div:nth-child(11) {
         grid-area: table11;
-        justify-content: left;
+        justify-content: center;
         align-items: start;
     }
 
     & > div:nth-child(12) {
         grid-area: table12;
+        justify-content: center;
     }
 
     & > div:nth-child(13) {
@@ -219,10 +229,12 @@ const TableStyles = styled.div`
 
     & > div:nth-child(15) {
         grid-area: table15;
+        justify-content: start;
     }
 
     & > div:nth-child(16) {
         grid-area: table16;
+        justify-content: center;
     }
 
     & > div:nth-child(17) {
@@ -236,6 +248,14 @@ const TableStyles = styled.div`
 `;
 
 
+const RightBarStyles = styled.div`
+display: flex;
+flex-direction: column;
+    right: 0;
+    gap: 24px;
+position: fixed;
+    margin-top: 180px;
+`
 
 
 export const S = {
@@ -251,6 +271,7 @@ export const S = {
     SearchInputField,
     TableStyles,
     UpWrapper,
+    RightBarStyles
 
 }
 
