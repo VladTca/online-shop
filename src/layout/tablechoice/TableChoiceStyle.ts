@@ -154,7 +154,7 @@ const TableStyles = styled.div`
 
     div {
         display: grid;
-        justify-content: start;
+        justify-content: center;
     }
 
     & > div:first-child {
@@ -164,24 +164,24 @@ const TableStyles = styled.div`
 
     & > div:nth-child(2) {
         grid-area: table2;
-        justify-content: center;
+      
     }
 
     & > div:nth-child(3) {
         grid-area: table3;
 
-        justify-content: center;
+       
     }
 
     & > div:nth-child(4) {
         grid-area: table4;
-        justify-content: center;
+      
 
     }
 
     & > div:nth-child(5) {
         grid-area: table5;
-        justify-content: center;
+        
     }
 
     & > div:nth-child(6) {
@@ -190,12 +190,12 @@ const TableStyles = styled.div`
 
     & > div:nth-child(7) {
         grid-area: table7;
-        justify-content: center;
+     
     }
 
     & > div:nth-child(8) {
         grid-area: table8;
-        justify-content: center;
+       
 
     }
 
@@ -210,13 +210,13 @@ const TableStyles = styled.div`
 
     & > div:nth-child(11) {
         grid-area: table11;
-        justify-content: center;
-        align-items: start;
+       
+    
     }
 
     & > div:nth-child(12) {
         grid-area: table12;
-        justify-content: center;
+        
     }
 
     & > div:nth-child(13) {
@@ -234,7 +234,8 @@ const TableStyles = styled.div`
 
     & > div:nth-child(16) {
         grid-area: table16;
-        justify-content: center;
+       justify-content: start;
+        padding-left: 50px;
     }
 
     & > div:nth-child(17) {
