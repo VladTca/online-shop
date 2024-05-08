@@ -140,7 +140,7 @@ const TableStyles = styled.div`
     margin-top: 180px;
     display: grid;
     margin-right: 125px;
-    ;
+position: relative;
     
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
@@ -248,13 +248,21 @@ const TableStyles = styled.div`
 
 `;
 
+const DownBarStyles = styled.div`
+    padding: 24px;
+    display: flex;
+justify-content: space-between;
+    border-radius: 16px;
+    background: ${theme.colors.Neutral10};
+    box-shadow: 0 16px 30px -6px rgba(25, 25, 28, 0.16);
+    `
 
 const RightBarStyles = styled.div`
 display: flex;
 flex-direction: column;
     right: 0;
     gap: 24px;
-position: fixed;
+position: absolute;
     margin-top: 180px;
 `
 
@@ -272,7 +280,8 @@ export const S = {
     SearchInputField,
     TableStyles,
     UpWrapper,
-    RightBarStyles
+    RightBarStyles,
+    DownBarStyles
 
 }
 

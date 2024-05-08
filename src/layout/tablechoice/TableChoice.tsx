@@ -4,6 +4,7 @@ import {S} from './TableChoiceStyle';
 import {Icon} from "../../components/icon/Icon";
 import {Menu} from "../header/headerMenu/menu/Menu";
 import {FlexWrapper} from "../../components/FlexWrapper";
+import {DownBar} from "./DownBar";
 
 import tableImage1 from '../../assets/images/Table1.png';
 import tableImage2 from '../../assets/images/Table2.png';
@@ -140,6 +141,10 @@ export const TableChoice = () => {
                 <div><img src={rightbar1} alt={'RightBar1'}/></div>
                 <div><img src={rightbar2} alt={'RightBar2'}/></div>
             </S.RightBarStyles>
+
+
+                <DownBar/>
+
 
         </S.TableChoiceStyle>
     )

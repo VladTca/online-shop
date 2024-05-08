@@ -2,7 +2,7 @@ import styled, {css} from "styled-components";
 import {theme} from "../styles/Theme";
 
 type BtnPropsType = {
-    btnType?: 'activeSwitcher' | 'inactiveSwitcher' | 'addNote' | 'payNow' | 'runningOrder'
+    btnType?: 'activeSwitcher' | 'inactiveSwitcher' | 'addNote' | 'payNow' | 'runningOrder' | 'placeOrder'
 }
 
 export const Button = styled.button<BtnPropsType>`
@@ -64,5 +64,15 @@ export const Button = styled.button<BtnPropsType>`
             cursor: pointer;
         }
     `}
+    ${props => props.btnType === 'placeOrder' && css<BtnPropsType>`
     
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        background-color: ${theme.colors.Primary60};
+        color: ${theme.colors.Neutral10};
+        border-radius: 58px;
+        padding: 12px;
+        
+    `}
 `
