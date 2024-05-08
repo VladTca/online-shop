@@ -139,9 +139,7 @@ const SearchInputField = styled.input`
 const TableStyles = styled.div`
     margin-top: 200px;
     display: grid;
-    align-items: start;
-    justify-content: start;
-    grid-template-columns: repeat(10, 1fr);
+ 
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas:
     "table1 table1 table2 table2 table3 table3 table4 table4 table5 table5"
@@ -151,7 +149,7 @@ const TableStyles = styled.div`
     border: 1px solid transparent;
     row-gap: 44px;
     padding: 24px;
-
+div{display: grid; justify-content: center}
     & > div:first-child {
         grid-area: table1;
         
