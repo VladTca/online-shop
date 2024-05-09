@@ -1,10 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM, {createRoot} from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {GlobalStyle} from "./styles/Global.styled";
 import {BrowserRouter} from "react-router-dom";
+import {DevSupport} from "@react-buddy/ide-toolbox";
+import {ComponentPreviews, useInitial} from "./dev";
+import Favicon from "react-favicon"
+
+
+
+const containerElement = document.querySelector(".react");
+if (containerElement) {
+    createRoot(containerElement).render(
+        <div>
+            <DevSupport ComponentPreviews={ComponentPreviews}
+                        useInitialHook={useInitial}
+            >
+                <Favicon url="../public/favicon.ico"/>
+            </DevSupport>
+        </div>
+    );
+}
 
 
 const root = ReactDOM.createRoot(
