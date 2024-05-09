@@ -135,7 +135,7 @@ const SearchInputField = styled.input`
     border: none;
 `
 const TableStyles = styled.div`
-    margin-top: 170px;
+    margin-top: 185px;
     display: grid;
     margin-right: 125px;
     position: relative;
@@ -153,6 +153,7 @@ const TableStyles = styled.div`
     div {
         display: grid;
         justify-content: center;
+        height: 170px;
     }
 
     & > div:first-child {
@@ -250,6 +251,7 @@ const DownBarStyles = styled.div`
     padding: 24px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-radius: 16px;
     background: ${theme.colors.Neutral10};
     box-shadow: 0 16px 30px -6px rgba(25, 25, 28, 0.16);
@@ -271,6 +273,13 @@ const DownSectionChoiseStyles = styled.div`
     padding-left: 32px;
     border-left: 1px solid ${theme.colors.Neutral30};
     margin-left: 32px;
+    display: flex;
+    gap: 16px;
+  
+    div{
+        width:48px;
+        height:48px;
+    }
 `
 
 const RightBarStyles = styled.div`
