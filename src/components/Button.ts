@@ -65,7 +65,7 @@ export const Button = styled.button<BtnPropsType>`
         }
     `}
     ${props => props.btnType === 'placeOrder' && css<BtnPropsType>`
-    
+
         font-weight: 600;
         font-size: 16px;
         line-height: 150%;
@@ -73,6 +73,7 @@ export const Button = styled.button<BtnPropsType>`
         color: ${theme.colors.Neutral10};
         border-radius: 58px;
         padding: 12px;
-        
+        gap: 10px;
+        letter-spacing: 1px;
     `}
 `
