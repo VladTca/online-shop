@@ -8,7 +8,7 @@ const TableChoiceStyle = styled.div`
     background-color: ${theme.colors.Neutral20};
     color: ${theme.colors.Neutral100};
     width: 100%;
-    height: 100vh;
+
 
 
 `
@@ -156,10 +156,26 @@ const TableStyles = styled.div`
         height: 170px;
         position: relative;
         width: fit-content;
+        
+        
+        &::after{
+            content:"";
+            display:block;
+            border: 3px solid ${theme.colors.Primary60};
+            border-radius: 16px;
+            position: absolute;
+            top:20px;
+            left:20px;
+            right:20px;
+            bottom:20px;
+            
+            
+            z-index: 0;
+        }
 
         svg {
             position: absolute;
-            z-index: 1;
+            z-index: 0;
             top: 28px;
             right: 28px;
 

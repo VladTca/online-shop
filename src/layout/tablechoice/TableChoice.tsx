@@ -91,7 +91,8 @@ const RezervMenuItems = [
 export const TableChoice = () => {
     return (
         <S.TableChoiceStyle>
-            <S.UpWrapper><Header/>
+            <S.UpWrapper>
+                <Header/>
                 <S.Dashboard>
                     Dashboard / food / <span>Select Table</span>
                 </S.Dashboard>
@@ -131,7 +132,7 @@ export const TableChoice = () => {
 
                         <div id={'table' + img.id} className={'table'}><img key={img.id} src={img.src}
                                                                             alt={`table ${img.id}`}/>
-                        <Icon iconId={'info'} width={'20'} height={'20'} viewBox={'0 0 20 20'}/>
+                            <Icon iconId={'info'} width={'20'} height={'20'} viewBox={'0 0 20 20'}/>
                         </div>
 
                     )
@@ -145,7 +146,7 @@ export const TableChoice = () => {
             </S.RightBarStyles>
 
 
-                <DownBar/>
+            <DownBar/>
 
 
         </S.TableChoiceStyle>
