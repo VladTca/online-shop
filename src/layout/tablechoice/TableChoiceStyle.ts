@@ -155,6 +155,7 @@ const TableStyles = styled.div`
         justify-content: center;
         height: 170px;
         position: relative;
+        width: fit-content;
 
         svg {
             position: absolute;

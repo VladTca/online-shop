@@ -1,12 +1,16 @@
 import {ComponentPreview, Previews} from "@react-buddy/ide-toolbox";
 import {PaletteTree} from "./palette";
 import App from "../App";
+import {Main} from "../layout/main/Main";
 
 const ComponentPreviews = () => {
     return (
         <Previews palette={<PaletteTree/>}>
             <ComponentPreview path="/App">
                 <App/>
+            </ComponentPreview>
+            <ComponentPreview path="/Main">
+                <Main/>
             </ComponentPreview>
         </Previews>
     );
