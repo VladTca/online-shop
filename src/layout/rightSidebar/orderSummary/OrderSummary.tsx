@@ -5,10 +5,10 @@ import {Modal} from "../../../components/modal/Modal";
 
 
 interface  IProps {
-    onClcik: () => void
+    onClick: () => void
 }
 
-export const OrderSummary: React.FC<IProps> = ({ onClcik}) => {
+export const OrderSummary: React.FC<IProps> = ({onClick}) => {
     // const [modalActive, setModalActive] = useState(false);
     return (
         <S.OrderSummary>
@@ -22,7 +22,7 @@ export const OrderSummary: React.FC<IProps> = ({ onClcik}) => {
                 </S.Total>
 
             {/*<Button onClick={() => setModalActive(true)} btnType={'payNow'}>Pay Now</Button>*/}
-            <Button onClick={onClcik} btnType={'payNow'}>Pay Now</Button>
+            <Button onClick={onClick} btnType={'payNow'}>Pay Now</Button>
             {/*<Modal active={modalActive} setActive={setModalActive}/>*/}
 
         </S.OrderSummary>

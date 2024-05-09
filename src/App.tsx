@@ -68,7 +68,7 @@ function App() {
                                 <div className="App">
                                     <Header showCustomer={false}/>
                                     <LeftSidebar/>
-                                    <RightSidebar onClcik={() => setModalActive(true)}/>
+                                    <RightSidebar onClick={() => setModalActive(true)}/>
                                     <Main/>
                                     <Modal active={modalActive} setActive={setModalActive}/>
                                 </div>

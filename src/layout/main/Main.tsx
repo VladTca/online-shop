@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {S} from './Main_Styles';
 import {Menu} from "../header/headerMenu/menu/Menu";
 import {Icon} from "../../components/icon/Icon";
@@ -141,7 +141,14 @@ const MainMenuItems = [
 ]
 
 
+
+function ShowModal() {
+    // setModalActive(true)
+}
+
 export const Main = () => {
+
+
     return (
         <S.Main>
             <S.MainHeader>
@@ -161,7 +168,7 @@ export const Main = () => {
 
             <S.GridContainer>
                 {MainMenuItems.map((m, i) => {
-                    return <MainMenuItem photo={m.photo} name={m.name} price={m.price} key={i}/>
+                    return <MainMenuItem onClickFunc={ShowModal} photo={m.photo} name={m.name} price={m.price} key={i}/>
                 })}
             </S.GridContainer>
 

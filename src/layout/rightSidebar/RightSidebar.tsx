@@ -7,16 +7,16 @@ import {Switcher} from "./switcher/Switcher";
 
 
 interface  IProps {
-    onClcik: () => void
+    onClick: () => void
 }
 
-export const RightSidebar: React.FC<IProps> = ({onClcik}) => {
+export const RightSidebar: React.FC<IProps> = ({onClick}) => {
     return (
         <S.RightSidebar>
             <Switcher/>
             <CustomerInformationForm/>
             <OrderDetails/>
-            <OrderSummary onClcik={onClcik}/>
+            <OrderSummary onClick={onClick}/>
         </S.RightSidebar>
     );
 };
