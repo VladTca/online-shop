@@ -154,6 +154,15 @@ const TableStyles = styled.div`
         display: grid;
         justify-content: center;
         height: 170px;
+        position: relative;
+
+        svg {
+            position: absolute;
+            z-index: 1;
+            top: 28px;
+            right: 28px;
+
+        }
     }
 
     & > div:first-child {

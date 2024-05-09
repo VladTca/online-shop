@@ -130,7 +130,9 @@ export const TableChoice = () => {
                     return (
 
                         <div id={'table' + img.id} className={'table'}><img key={img.id} src={img.src}
-                                                                            alt={`table ${img.id}`}/></div>
+                                                                            alt={`table ${img.id}`}/>
+                        <Icon iconId={'info'} width={'20'} height={'20'} viewBox={'0 0 20 20'}/>
+                        </div>
 
                     )
                 })}
