@@ -267,11 +267,13 @@ const TableItemsStyles = styled.div`
             z-index: 0;
         }
 
-        svg {
+    //&[data-clicked='true'] 
+    svg {
             position: absolute;
             z-index: 0;
             top: 28px;
             right: 28px;
+            
 
         }
     
