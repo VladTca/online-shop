@@ -1,10 +1,10 @@
-import React from 'react';
-import {Header} from "../header/Header";
-import {S} from './TableChoiceStyle';
-import {Icon} from "../../components/icon/Icon";
-import {Menu} from "../header/headerMenu/menu/Menu";
-import {FlexWrapper} from "../../components/FlexWrapper";
-import {DownBar} from "./DownBar";
+import React, { useState } from 'react';
+import { Header } from "../header/Header";
+import { S } from './TableChoiceStyle';
+import { Icon } from "../../components/icon/Icon";
+import { Menu } from "../header/headerMenu/menu/Menu";
+import { FlexWrapper } from "../../components/FlexWrapper";
+import { DownBar } from "./DownBar";
 
 import tableImage1 from '../../assets/images/Table1.png';
 import tableImage2 from '../../assets/images/Table2.png';
@@ -27,27 +27,26 @@ import tableImage18 from '../../assets/images/Table18.png';
 import rightbar1 from '../../assets/images/Sidebar-right.png';
 import rightbar2 from '../../assets/images/Sidebar-right2.png';
 
-
 const tableImages = [
-    {id: '1', src: tableImage1},
-    {id: '2', src: tableImage2},
-    {id: '3', src: tableImage3},
-    {id: '4', src: tableImage4},
-    {id: '5', src: tableImage5},
-    {id: '6', src: tableImage6},
-    {id: '7', src: tableImage7},
-    {id: '8', src: tableImage8},
-    {id: '9', src: tableImage9},
-    {id: '10', src: tableImage10},
-    {id: '11', src: tableImage11},
-    {id: '12', src: tableImage12},
-    {id: '13', src: tableImage13},
-    {id: '14', src: tableImage14},
-    {id: '15', src: tableImage15},
-    {id: '16', src: tableImage16},
-    {id: '17', src: tableImage17},
-    {id: '18', src: tableImage18},
-]
+    { id: '1', src: tableImage1 },
+    { id: '2', src: tableImage2 },
+    { id: '3', src: tableImage3 },
+    { id: '4', src: tableImage4 },
+    { id: '5', src: tableImage5 },
+    { id: '6', src: tableImage6 },
+    { id: '7', src: tableImage7 },
+    { id: '8', src: tableImage8 },
+    { id: '9', src: tableImage9 },
+    { id: '10', src: tableImage10 },
+    { id: '11', src: tableImage11 },
+    { id: '12', src: tableImage12 },
+    { id: '13', src: tableImage13 },
+    { id: '14', src: tableImage14 },
+    { id: '15', src: tableImage15 },
+    { id: '16', src: tableImage16 },
+    { id: '17', src: tableImage17 },
+    { id: '18', src: tableImage18 },
+];
 
 const LegendItems = [
     {
@@ -64,10 +63,9 @@ const LegendItems = [
     },
     {
         svg: 'indicator-orange',
-        title: 'Avalaible soon',
+        title: 'Available soon',
     },
-
-]
+];
 
 const RezervMenuItems = [
     {
@@ -85,71 +83,70 @@ const RezervMenuItems = [
         title: 'Running order',
         href: 'running-order'
     },
-]
-
+];
 
 export const TableChoice = () => {
+    const [isButtonClicked, setButtonClicked] = useState(
+        tableImages.map(() => false)
+    );
+
+    const handleClick = (index:number) => {
+        setButtonClicked(isButtonClicked.map((item, i) =>
+            i === index ? !item : item
+        ));
+    };
+
     return (
         <S.TableChoiceStyle>
             <S.UpWrapper>
-                <Header/>
+                <Header />
                 <S.Dashboard>
                     Dashboard / food / <span>Select Table</span>
                 </S.Dashboard>
                 <S.ReservAndSearchBar>
-
-                    <FlexWrapper><S.IconWrapper>
-                        <Icon iconId={'arrow-left'}/>
-                    </S.IconWrapper>
+                    <FlexWrapper>
+                        <S.IconWrapper>
+                            <Icon iconId={'arrow-left'} />
+                        </S.IconWrapper>
                         <S.Legend>
-                            {LegendItems.map((item) => (
-                                <><S.LegendItem>
-                                    <Icon iconId={item.svg}/>
+                            {LegendItems.map((item, index) => (
+                                <S.LegendItem key={index}>
+                                    <Icon iconId={item.svg} />
                                     <span>{item.title}</span>
-                                </S.LegendItem></>
-
-
+                                </S.LegendItem>
                             ))}
-                        </S.Legend></FlexWrapper>
-
+                        </S.Legend>
+                    </FlexWrapper>
                     <FlexWrapper>
                         <S.RezervMenuItemsStyles>
-                            <Menu MenuStyledProps={S.RezervMenuItemsBar}
-                                  PropForFlexWrapper2={'center'} items={RezervMenuItems}/>
+                            <Menu MenuStyledProps={S.RezervMenuItemsBar} PropForFlexWrapper2={'center'} items={RezervMenuItems} />
                         </S.RezervMenuItemsStyles>
                         <S.SearchInputBlock>
-                            <Icon iconId={'search'}/>
-                            <S.SearchInputField type={'search'} placeholder={'Search table...'}/>
+                            <Icon iconId={'search'} />
+                            <S.SearchInputField type={'search'} placeholder={'Search table...'} />
                         </S.SearchInputBlock>
                     </FlexWrapper>
-
-                </S.ReservAndSearchBar></S.UpWrapper>
-
+                </S.ReservAndSearchBar>
+            </S.UpWrapper>
             <S.TableStyles>
-
-                {tableImages.map((img, index) => {
-                    return (
-
-                        <div id={'table' + img.id} className={'table'}><img key={img.id} src={img.src}
-                                                                            alt={`table ${img.id}`}/>
-                            <Icon iconId={'info'} width={'20'} height={'20'} viewBox={'0 0 20 20'}/>
-                        </div>
-
-                    )
-                })}
-
+                {tableImages.map((img, index) => (
+                    <S.TableItemsStyles
+                        key={img.id}
+                        id={'table' + img.id}
+                        className={'table'}
+                        data-clicked={isButtonClicked[index].toString()}
+                        onClick={() => handleClick(index)}
+                    >
+                        <img src={img.src} alt={`table ${img.id}`} />
+                        <Icon iconId={'info'} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
+                    </S.TableItemsStyles>
+                ))}
             </S.TableStyles>
-
             <S.RightBarStyles>
-                <div><img src={rightbar1} alt={'RightBar1'}/></div>
-                <div><img src={rightbar2} alt={'RightBar2'}/></div>
+                <div><img src={rightbar1} alt={'RightBar1'} /></div>
+                <div><img src={rightbar2} alt={'RightBar2'} /></div>
             </S.RightBarStyles>
-
-
-            <DownBar/>
-
-
+            <DownBar />
         </S.TableChoiceStyle>
-    )
+    );
 };
-

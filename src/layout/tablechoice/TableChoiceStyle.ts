@@ -150,37 +150,7 @@ const TableStyles = styled.div`
     row-gap: 44px;
     padding: 24px 24px 0 24px;
 
-    div {
-        display: grid;
-        justify-content: center;
-        height: 170px;
-        position: relative;
-        width: fit-content;
-        
-        
-        &::after{
-            content:"";
-            display:block;
-            border: 3px solid ${theme.colors.Primary60};
-            border-radius: 16px;
-            position: absolute;
-            top:20px;
-            left:20px;
-            right:20px;
-            bottom:20px;
-            
-            
-            z-index: 0;
-        }
 
-        svg {
-            position: absolute;
-            z-index: 0;
-            top: 28px;
-            right: 28px;
-
-        }
-    }
 
     & > div:first-child {
         grid-area: table1;
@@ -273,6 +243,40 @@ const TableStyles = styled.div`
 
 `;
 
+const TableItemsStyles = styled.div`
+    
+        display: grid;
+        justify-content: center;
+        height: 170px;
+        position: relative;
+        width: fit-content;
+
+
+        &[data-clicked='true']::after {
+            content: '';
+            display:block;
+            border: 3px solid ${theme.colors.Primary60};
+            border-radius: 16px;
+            position: absolute;
+            top:20px;
+            left:20px;
+            right:20px;
+            bottom:20px;
+           
+
+            z-index: 0;
+        }
+
+        svg {
+            position: absolute;
+            z-index: 0;
+            top: 28px;
+            right: 28px;
+
+        }
+    
+`
+
 const DownBarStyles = styled.div`
     padding: 24px;
     display: flex;
@@ -334,7 +338,8 @@ export const S = {
     UpWrapper,
     RightBarStyles,
     DownBarStyles,
-    DownSectionChoiseStyles
+    DownSectionChoiseStyles,
+    TableItemsStyles,
 
 }
 
