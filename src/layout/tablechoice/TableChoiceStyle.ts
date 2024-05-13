@@ -244,39 +244,45 @@ const TableStyles = styled.div`
 `;
 
 const TableItemsStyles = styled.div`
-    
-        display: grid;
-        justify-content: center;
-        height: 170px;
-        position: relative;
-        width: fit-content;
+
+    display: grid;
+    justify-content: center;
+    height: 170px;
+    position: relative;
+    width: fit-content;
 
 
-        &[data-clicked='true']::after {
-            content: '';
-            display:block;
-            border: 3px solid ${theme.colors.Primary60};
-            border-radius: 16px;
-            position: absolute;
-            top:20px;
-            left:20px;
-            right:20px;
-            bottom:20px;
-           
+    &[data-clicked='true']::after {
+        content: '';
+        display: block;
+        border: 3px solid ${theme.colors.Primary60};
+        border-radius: 16px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
 
-            z-index: 0;
-        }
 
-    //&[data-clicked='true'] 
+        z-index: 0;
+    }
+
+
+    &[data-clicked='true'] svg {
+        position: absolute;
+        z-index: 0;
+        top: 28px;
+        right: 28px;
+        opacity: 1;
+    }
     svg {
-            position: absolute;
-            z-index: 0;
-            top: 28px;
-            right: 28px;
-            
+        position: absolute;
+        z-index: 0;
+        top: 28px;
+        right: 28px;
+        opacity: 0;
 
-        }
-    
+    }
 `
 
 const DownBarStyles = styled.div`
