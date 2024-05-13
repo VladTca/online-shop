@@ -5,7 +5,6 @@ import mieKuahPedas from '../../../assets/images/Mie-kuah-pedas.png';
 import ayamKentang from '../../../assets/images/Ayam-kentang.png';
 import steakSapiBakar from '../../../assets/images/Steak-sapi-bakar.png';
 import {SectionTitle} from "../../../components/SectionTitle";
-import {FlexWrapper} from "../../../components/FlexWrapper";
 import ikansantan from '../../../assets/images/Ikan-santan.png';
 
 const orders = [
