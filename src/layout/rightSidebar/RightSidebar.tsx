@@ -6,17 +6,14 @@ import {OrderSummary} from "./orderSummary/OrderSummary";
 import {Switcher} from "./switcher/Switcher";
 
 
-interface  IProps {
-    onClcik: () => void
-}
 
-export const RightSidebar: React.FC<IProps> = ({onClcik}) => {
+export const RightSidebar =()=>{
     return (
         <S.RightSidebar>
             <Switcher/>
             <CustomerInformationForm/>
             <OrderDetails/>
-            <OrderSummary onClcik={onClcik}/>
+            <OrderSummary/>
         </S.RightSidebar>
     );
 };
