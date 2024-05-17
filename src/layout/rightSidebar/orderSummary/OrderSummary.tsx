@@ -6,7 +6,7 @@ import {Modal} from "../../../components/modal/Modal";
 
 
 export const OrderSummary = () => {
-    // const [modalActive, setModalActive] = useState(false);
+    const [modalActive, setModalActive] = useState(false);
     return (
         <S.OrderSummary>
 
@@ -18,9 +18,8 @@ export const OrderSummary = () => {
                     Total <span>$ 64.00</span>
                 </S.Total>
 
-            {/*<Button onClick={() => setModalActive(true)} btnType={'payNow'}>Pay Now</Button>*/}
-            <Button btnType={'payNow'}>Pay Now</Button>
-            {/*<Modal active={modalActive} setActive={setModalActive}/>*/}
+            <Button type="button" onClick={() => setModalActive(true)} btnType={'payNow'}>Pay Now</Button>
+            <Modal active={modalActive} setActive={setModalActive}/>
 
         </S.OrderSummary>
     );
