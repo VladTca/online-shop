@@ -59,8 +59,8 @@ function App() {
                                 <div className="App">
                                     <Header showCustomer={false} />
                                     <LeftSidebar />
-                                    <RightSidebar />
                                     <Main />
+                                    <RightSidebar />+/;
                                 </div>
                             } />
                             <Route path="/tablechoice" element={<TableChoice />} />

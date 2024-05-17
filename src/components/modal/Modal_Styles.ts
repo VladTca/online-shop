@@ -12,10 +12,10 @@ const Modal = styled.div<{active: boolean}>`
     align-items: center;
     justify-content: center;
     transform: ${props => props.active ? 'scale(1)' : 'scale(0)'};
-    // opacity: ${props => props.active ? '1' : '0'};
+    //opacity: ${props => props.active ? '1' : '0'};
     // pointer-events: ${props => props.active ? 'all' : 'none'};
     //transition: 0.5s;
-    z-index: 999;
+    z-index: 999099;
 `
 
 const ModalContent = styled.div`

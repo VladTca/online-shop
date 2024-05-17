@@ -13,7 +13,7 @@ export const CustomerInformationForm: React.FC = () => {
 
             <SectionTitle>Customer information</SectionTitle>
 
-            <S.Form>
+            <S.Form onSubmit={(e) => e.preventDefault()}>
                 <S.Field placeholder={'Customer name'}/>
 
                 <Link to="/tablechoice">

@@ -11,8 +11,8 @@ export const Modal: React.FC<ModalPropsType> = ({active, setActive}) => {
 
     return (
         <S.Modal active={active} onClick={() => setActive(false)}>
-            <S.ModalContent onClick={e => e.stopPropagation()}>
-
+            <S.ModalContent>
+ппппппппппппппп
             </S.ModalContent>
         </S.Modal>
     );
