@@ -23,7 +23,7 @@ export const CustomerInformationForm: React.FC = () => {
                     </S.FieldContainer></Link>
 
                 <Button btnType={'addNote'} onClick={() => setModalActive(true)}>Add note</Button>
-                <Modal active={modalActive} setActive={setModalActive}/>
+                <Modal active={modalActive} setActive={setModalActive} modalType={'addNote'}/>
                 {/*<Modal>*/}
                 {/*    fggdhbfdghdfg*/}
                 {/*</Modal>*/}

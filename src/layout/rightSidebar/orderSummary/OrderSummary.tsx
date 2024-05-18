@@ -19,7 +19,7 @@ export const OrderSummary = () => {
                 </S.Total>
 
             <Button type="button" onClick={() => setModalActive(true)} btnType={'payNow'}>Pay Now</Button>
-            <Modal active={modalActive} setActive={setModalActive}/>
+            <Modal active={modalActive} setActive={setModalActive} modalType={'customerInfo'}/>
 
         </S.OrderSummary>
     );
