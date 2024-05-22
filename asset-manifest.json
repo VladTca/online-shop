@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/online-shop/static/css/main.e718d1d5.css",
+    "main.js": "/online-shop/static/js/main.3703684e.js",
+    "static/js/845.2062d049.chunk.js": "/online-shop/static/js/845.2062d049.chunk.js",
+    "static/js/477.1be89119.chunk.js": "/online-shop/static/js/477.1be89119.chunk.js",
+    "static/media/Mie-putih-ayam-pedas.png": "/online-shop/static/media/Mie-putih-ayam-pedas.e5f64108ca179714fc4a.png",
+    "static/media/Steak-sapi-bakar.png": "/online-shop/static/media/Steak-sapi-bakar.b36ce3c7a69c5468fb03.png",
+    "static/media/login-back.png": "/online-shop/static/media/login-back.47e03a310b5ed298e5a8.png",
+    "static/media/screensave.png": "/online-shop/static/media/screensave.23056b39944b42593819.png",
+    "static/media/Nasi-goreng-putih.png": "/online-shop/static/media/Nasi-goreng-putih.e2b58b9783b089f5a461.png",
+    "static/media/Mie-kuah-pedas.png": "/online-shop/static/media/Mie-kuah-pedas.4a6514ee502daba29f69.png",
+    "static/media/Ayam-kentang.png": "/online-shop/static/media/Ayam-kentang.14809104d8632864a9a9.png",
+    "static/media/Nasi-steak-ayam.png": "/online-shop/static/media/Nasi-steak-ayam.52471e2d20dbecf5847e.png",
+    "static/media/Mie-gepeng-telor.png": "/online-shop/static/media/Mie-gepeng-telor.fe7d7b5ca466d9ea658b.png",
+    "static/media/Ikan-santan.png": "/online-shop/static/media/Ikan-santan.d184c75a6ae39cc0c9fa.png",
+    "static/media/Kuah-santan.png": "/online-shop/static/media/Kuah-santan.98a8a4d19bdf30781ff7.png",
+    "static/media/Steak-ikan-santan.png": "/online-shop/static/media/Steak-ikan-santan.47104a02e5ca12ef5eb6.png",
+    "static/media/Cumi-cumi.png": "/online-shop/static/media/Cumi-cumi.c1cc2b7be0b911ce9a3e.png",
+    "static/media/Nasi-ayam-salad.png": "/online-shop/static/media/Nasi-ayam-salad.5810bee6132275316e60.png",
+    "static/media/okonomake.webp": "/online-shop/static/media/okonomake.0e8d3e97fecfc90de919.webp",
+    "static/media/ahi-poke.webp": "/online-shop/static/media/ahi-poke.16b718e28752e44d5ceb.webp",
+    "static/media/icon-sprites.svg": "/online-shop/static/media/icon-sprites.c613630497ced6bd131b86e1dd4f78e7.svg",
+    "static/media/viwisuaz.webp": "/online-shop/static/media/viwisuaz.1600863a8e65f6751459.webp",
+    "static/media/crudo.webp": "/online-shop/static/media/crudo.b2fef924877e33ec91a7.webp",
+    "static/media/Sidebar-right.png": "/online-shop/static/media/Sidebar-right.ae2881d933b03e4ce281.png",
+    "static/media/Sidebar-right2.png": "/online-shop/static/media/Sidebar-right2.d865573a8112a9bd0b7b.png",
+    "index.html": "/online-shop/index.html",
+    "main.e718d1d5.css.map": "/online-shop/static/css/main.e718d1d5.css.map",
+    "main.3703684e.js.map": "/online-shop/static/js/main.3703684e.js.map",
+    "845.2062d049.chunk.js.map": "/online-shop/static/js/845.2062d049.chunk.js.map",
+    "477.1be89119.chunk.js.map": "/online-shop/static/js/477.1be89119.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e718d1d5.css",
+    "static/js/main.3703684e.js"
+  ]
+}
