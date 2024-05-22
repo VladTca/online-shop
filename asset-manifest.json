@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/online-shop/static/css/main.e718d1d5.css",
-    "main.js": "/online-shop/static/js/main.3e53c1d8.js",
+    "main.js": "/online-shop/static/js/main.3703684e.js",
     "static/js/845.2062d049.chunk.js": "/online-shop/static/js/845.2062d049.chunk.js",
-    "static/js/477.57bb40fb.chunk.js": "/online-shop/static/js/477.57bb40fb.chunk.js",
+    "static/js/477.1be89119.chunk.js": "/online-shop/static/js/477.1be89119.chunk.js",
     "static/media/Mie-putih-ayam-pedas.png": "/online-shop/static/media/Mie-putih-ayam-pedas.e5f64108ca179714fc4a.png",
     "static/media/Steak-sapi-bakar.png": "/online-shop/static/media/Steak-sapi-bakar.b36ce3c7a69c5468fb03.png",
     "static/media/login-back.png": "/online-shop/static/media/login-back.47e03a310b5ed298e5a8.png",
@@ -27,12 +27,12 @@
     "static/media/Sidebar-right2.png": "/online-shop/static/media/Sidebar-right2.d865573a8112a9bd0b7b.png",
     "index.html": "/online-shop/index.html",
     "main.e718d1d5.css.map": "/online-shop/static/css/main.e718d1d5.css.map",
-    "main.3e53c1d8.js.map": "/online-shop/static/js/main.3e53c1d8.js.map",
+    "main.3703684e.js.map": "/online-shop/static/js/main.3703684e.js.map",
     "845.2062d049.chunk.js.map": "/online-shop/static/js/845.2062d049.chunk.js.map",
-    "477.57bb40fb.chunk.js.map": "/online-shop/static/js/477.57bb40fb.chunk.js.map"
+    "477.1be89119.chunk.js.map": "/online-shop/static/js/477.1be89119.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e718d1d5.css",
-    "static/js/main.3e53c1d8.js"
+    "static/js/main.3703684e.js"
   ]
 }
